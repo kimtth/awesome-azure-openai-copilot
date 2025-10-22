@@ -163,17 +163,17 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 - [Azure AI Search: Outperforming vector search with hybrid retrieval and reranking](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) - ✍️Vector search with hybrid retrieval and reranking.
 - [Document-level access control](https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview) - ✍️Document-level access helps restrict content visibility to authorized users, based on predefined access rules.
 - [Integrated vectorization](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/integrated-vectorization-with-azure-openai-for-azure-ai-search/ba-p/4206836) - ✍️Automatically splits documents into chunks, creates embeddings with Azure OpenAI, maps them to an Azure AI Search index, and automates query vectorization.
-- [Python samples for Azure AI Search](https://github.com/Azure-Samples/azure-search-python-samples) - ✨Python samples for Azure AI Search.
+- [Python samples for Azure AI Search](https://github.com/Azure-Samples/azure-search-python-samples) - ✨Python samples used in Azure AI Search Documentation.
 - [RAG-Knowledge](https://github.com/microsoft/RAG-Knowledge) - ✨Sample code for Data Preprocessing, Chunking, Index Design, Query Optimization.
-- [Relevance scoring in hybrid search using Reciprocal Rank Fusion (RRF)](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking) - ✍️Reciprocal Rank Fusion (RRF).
+- [Relevance scoring in hybrid search](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking) - ✍️Hybrid search with Reciprocal Rank Fusion (RRF).
 - [REST examples for Azure AI Search](https://github.com/Azure-Samples/azure-search-rest-samples) - ✨REST sample requests for search features.
-- 🌐[Vector Search Sample Code](https://github.com/Azure/azure-search-vector-samples) - Sample code demonstrating Azure AI Search vector capabilities.
+- 🌐[Vector Search Sample Code](https://github.com/Azure/azure-search-vector-samples) - ✨Sample code demonstrating Azure AI Search vector capabilities.
 
 ## Azure AI Services
 
 - [Artificial Intelligence Architecture Design](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/) - ✍️Overview of Azure AI services and solution patterns.
 - [Assistants API](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-announces-assistants-api-new-models-for/ba-p/4049940) - ✍️Code Interpreter, Function calling, Knowledge retrieval tool, and Threads.
-- [Azure AI Content Understanding](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-azure-ai-content-understanding-transforming-multimodal-data-into-insi/4297196) - ✍️Azure AI Content Understanding: Transforming Multimodal Data into Insights.
+- [Azure AI Content Understanding](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-azure-ai-content-understanding-transforming-multimodal-data-into-insi/4297196) - ✍️Transforming Multimodal Data into Insights.
 - [Azure AI Foundry](https://ai.azure.com/) - ✍️Azure AI Foundry portal (formerly Azure AI Studio).
 - [Azure AI Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352) - ✍️Azure AI Foundry Agent Service to create enterprise-grade, multi-agent systems.
 - [Azure AI Foundry Fine Tuning](https://techcommunity.microsoft.com/blog/aiplatformblog/what%E2%80%99s-new-in-azure-ai-foundry-fine-tuning/4413873) - ✍️Reinforcement Fine-Tuning (RFT) with o4-mini.
@@ -238,7 +238,7 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 - 🌐[Azure Multimodal AI + LLM Processing Accelerator](https://github.com/Azure/multimodal-ai-llm-processing-accelerator) - ✨Build multimodal data processing pipelines with Azure AI Services + LLMs.
 - 🏬[Azure OpenAI cookbook](https://github.com/Azure-Samples/openai) - ✨The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.
 - 🏛️[Azure OpenAI Design Patterns](https://github.com/microsoft/azure-openai-design-patterns) - ✨A set of design patterns using the Azure OpenAI service.
-- [Azure OpenAI Network Latency Test Script](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) - ✨Azure OpenAI Network Latency Test Script.
+- [Azure OpenAI Network Latency Test Script](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) - ✨Azure OpenAI Network Latency Test Script using Python.
 - 🏬[Azure OpenAI RAFT](https://github.com/Azure-Samples/azure-openai-raft ) - ✨RAFT Fine-Tuning for RAG Using Azure OpenAI.
 - 🏬[Azure OpenAI RAG workshop](https://github.com/Azure-Samples/azure-openai-rag-workshop) - ✨RAG using LangChain.js and OpenAI. Hosted on Azure Static Web Apps and Azure Container Apps, with Azure AI Search as the vector database.
 - 🏛️[Azure OpenAI workshop](https://github.com/microsoft/OpenAIWorkshop) - ✨Workshop materials to build intelligent solutions on Open AI.

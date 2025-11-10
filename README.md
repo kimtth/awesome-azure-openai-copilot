@@ -23,11 +23,10 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 - [Azure OpenAI Accelerator & Samples](#azure-openai-accelerator--samples)
 - [Use Case & Architecture References](#use-case--architecture-references)
 
----
-
 ## Azure OpenAI Overview
 
 - [Abuse Monitoring](https://learn.microsoft.com/en-us/legal/cognitive-services/openai/data-privacy) - ✍️Data handling and retention policy for abuse detection in Azure OpenAI.
+- [Azure OpenAI Models](https://ai.azure.com/explore/models) - ✍️Catalog of foundation and reasoning models available from Azure OpenAI.
 - [OpenAI Models](https://platform.openai.com/docs/models) - ✍️Catalog of foundation and reasoning models available from OpenAI.
 - [What is Azure OpenAI Service?](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/overview) - ✍️Overview of Azure-hosted OpenAI capabilities, security and integration features.
 
@@ -53,6 +52,7 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 
 ## Agent Frameworks
 
+- 🏛️[Agent Lightning](https://github.com/microsoft/agent-lightning) - ✨Train and optimize agents (including RL, prompt‑optimization, multi‑agent workflows) 
 - [AIOpsLab](https://www.microsoft.com/en-us/research/blog/aiopslab-building-ai-agents-for-autonomous-clouds/) - ✍️Research-driven AI agents for cloud incident analysis and root cause automation.
 - 🏛️[Autogen](https://github.com/microsoft/autogen) - ✨Customizable multi-agent conversation and tool orchestration framework (community AG2 and Microsoft variants).
 - 🏛️[ExACT](https://github.com/microsoft/ExACT) - ✨Adaptive retrieval and planning using interaction memory and Monte Carlo Tree Search.
@@ -96,8 +96,6 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 - 🏛️[GitHub Copilot Chat for VS Code](https://github.com/microsoft/vscode-copilot-chat) - ✨In-editor contextual multi-turn AI assistance.
 - [GitHub Copilot CLI](https://github.com/github/copilot-cli) - ✨AI-powered coding assistance in your terminal.
 
----
-
 ## Microsoft Copilot Products
 
 - [Clarity Copilot](https://learn.microsoft.com/en-us/clarity/copilot/clarity-copilot) - ✍️Analytics insights assistant for session telemetry.
@@ -140,14 +138,14 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 ## Copilot Development
 - [Azure AI Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357) - ✍️Managed agent service in Azure AI Foundry.
 - [Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-studio/what-is-ai-studio) - ✍️Portal and SDK for building generative AI solutions.
+- [Agent Evaluation in Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-smarter-test-smarter-agent-evaluation-in-microsoft-copilot-studio/) - ✍️Structured, automated testing solution directly in Copilot Studio.
 - [Community contributed samples for the Microsoft 365 Copilot](https://github.com/pnp/copilot-pro-dev-samples) - ✨Samples for extending Microsoft 365 Copilot features.
 - [Copilot Studio March 2025 Update](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/whats-new-in-copilot-studio-march-2025/) - ✍️Added autonomous agents, deep reasoning, and MCP integration.
 - [Copilot Studio Monthly updates](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/cs-content-type/monthly-updates/) - Copilot Studio news and features for the last month.
 - [Copilot System Overview (video)](https://www.youtube.com/watch?v=E5g20qmeKpg) - Copilot Architecture explanation video.
 - [Copilot Tuning](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-microsoft-365-copilot-tuning/4414762) - ✍️Low-code model tuning and grounded agent creation.
 - [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - ✍️Customization and orchestration environment (formerly Power Virtual Agents).
-
----
+- [Microsoft 365 Copilot - App Builder and Workflows](https://www.microsoft.com/en-us/microsoft-365/blog/2025/10/28/microsoft-365-copilot-now-enables-you-to-build-apps-and-workflows/) - ✍️Build working apps & workflows using natural language.
 
 ## Azure AI Search
 
@@ -230,6 +228,7 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 - [AI Samples for .NET](https://github.com/dotnet/ai-samples) - ✨Official .NET AI samples (evaluation, integration).
 - 🌐[AI-in-a-Box](https://github.com/Azure/AI-in-a-Box) - ✨AI-in-a-Box aims to provide an "Azure AI/ML Easy Button" for common scenarios.
 - 🏬[AI-in-a-Box - Generative AI Bot Quickstart](https://github.com/Azure-Samples/gen-ai-bot-in-a-box) - ✨A template deploys a Generative AI Virtual Assistant using Azure OpenAI and Bot Framework. 
+- 🏬[AI Hub Gateway Landing Zone](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator) - ✨Enterprise-ready solution accelerator for implementing a centralized AI API gateway.
 - 🌐[Azure-llm-fine-tuning](https://github.com/Azure/azure-llm-fine-tuning) - ✨SLM/LLM Fine-tuning on Azure.
 - 🌐[Azure Accelerator Repos](https://github.com/orgs/Azure/repositories?q=accelerator+sort%3Astars) - ✨Collection of official Azure accelerators.
 - 🏬[Azure AI Foundry Baseline](https://github.com/Azure-Samples/azure-ai-foundry-baseline) - ✨Baseline setup for Azure AI Foundry projects
@@ -257,9 +256,11 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 - 🌐[Enterprise RAG Avatar](https://github.com/Azure/gpt-rag-avatar) - ✨GPT-RAG Avatar integrates Generative AI responses, real-time streaming into a dynamic avatar interface.
 - 🏬[Evaluating a RAG Chat App](https://github.com/Azure-Samples/ai-rag-chat-evaluator) - ✨Tools for evaluation of RAG Chat Apps using Azure AI Evaluate SDK.
 - 🏛️[Fabric notebooks for analyzing chat history stored in CosmosDB](https://github.com/microsoft/fabric-cosmosdb-chat-analytics) - ✨Fabric notebooks for analyzing chat history.
+- 🌐[Generate Synthetic QnAs from Real-world Data](https://github.com/Azure/synthetic-qa-generation) - ✨Demonstrating how to create/augment a QnA dataset from complex unstructured data.
 - 🏛️[Generic accelerator for Build your own copilot](https://github.com/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator) - ✨Build your own copilot solution accelerator.
 - 🌐[GPT RAG Ingestion](https://github.com/Azure/gpt-rag-ingestion) - ✨GPT-based RAG ingestion utilities.
 - 🌐[GPT-RAG](https://github.com/Azure/GPT-RAG) - ✨Enterprise RAG solution accelerator.
+- 🏬[Healthcare Agent Orchestrator](https://github.com/Azure-Samples/healthcare-agent-orchestrator) - ✨A multi-agent accelerator that coordinates modular specialized agents to assist multi-disciplinary healthcare workflows.
 - 🏛️[Microsoft AI Tour](https://github.com/microsoft/aitour-repo-principal-list) - ✨A session and workshop how to best leverage AI.
 - 🏛️[Microsoft Copilot Studio Samples](https://github.com/microsoft/CopilotStudioSamples) - ✨Samples and artifacts for Microsoft Copilot Studio.
 - [Microsoft.Extensions.AI](https://devblogs.microsoft.com/dotnet/introducing-microsoft-extensions-ai-preview/) - ✍️Unified C# abstractions for models, embeddings, and middleware.
@@ -279,42 +280,40 @@ A curated list of Microsoft Azure OpenAI & Copilot ecosystem resources — inclu
 - [AI gateway capabilities in Azure API Management](https://techcommunity.microsoft.com/blog/integrationsonazureblog/ai-gateway-enhancements-llm-policies-real-time-api-support-content-safety-and-mo/4409828) - ✍️Semantic Caching. Azure AI Content Safety. LLM policies (llm-token-limit, llm-emit-metric, llm-content-safety).
 - [Azure AI Foundry Blog](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog) - ✍️Azure AI Foundry Blog for Azure AI news, events.
 - [An Introduction to LLMOps](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/an-introduction-to-llmops-operationalizing-and-managing-large/ba-p/3910996) - ✍️Operationalizing and Managing Large Language Models using Azure ML.
-- [Authentication and Authorization in Generative AI applications with Entra ID and Azure AI Search](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/authentication-and-authorization-in-generative-ai-applications/ba-p/4022277) - ✍️Authentication and Authorization in Generative AI applications with Entra ID and Azure AI Search.
+- [Authentication and Authorization in Generative AI applications with Entra ID and Azure AI Search](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/authentication-and-authorization-in-generative-ai-applications/ba-p/4022277) - ✍️Authentication in AI applications with Entra ID and Azure AI Search.
 - [Azure AI Services Landing Zone](https://github.com/FreddyAyala/AzureAIServicesLandingZone) - ✨Azure AI Landing Zone with Terraform.
 - [Azure Command Companion](https://techcommunity.microsoft.com/t5/analytics-on-azure-blog/azure-command-companion/ba-p/4005044) - ✍️Azure CLI Command Generation to translate natural language into the appropriate Azure CLI commands.
 - [Azure OpenAI and Call Center Modernization](https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-and-call-center-modernization/ba-p/4107070) - ✍️Azure OpenAI and Call use case to improve its customer service and reduce the cost and time of handling customer calls.
 - [Azure OpenAI Best Practices Insights from Customer Journeys](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-best-practices-insights-from-customer-journeys/ba-p/4166943) - ✍️Best Practices for Azure OpenAI Resources.
 - [Azure OpenAI chat baseline architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/basic-openai-e2e-chat) - ✍️Designing your production enterprise chat applications.
-- [Azure OpenAI Landing Zone reference architecture](https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102) - ✍️Azure AI Services OpenAI Landing Zone is a reference architecture that integrates a variety of services to create a seamless infrastructure for running OpenAI workloads.
-- [Baseline Agentic AI Systems Architecture](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/baseline-agentic-ai-systems-architecture/ba-p/4207137) - ✍️Baseline Agentic AI Systems Architecture to build multiple conversable agents system.
+- [Azure OpenAI Landing Zone reference architecture](https://techcommunity.microsoft.com/t5/azure-architecture-blog/azure-openai-landing-zone-reference-architecture/ba-p/3882102) - ✍️A reference architecture that integrates a variety of services to create a seamless infrastructure for running OpenAI workloads.
+- [Baseline Agentic AI Systems Architecture](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/baseline-agentic-ai-systems-architecture/ba-p/4207137) - ✍️Agentic AI Systems Architecture to build multiple conversable agents system.
 - [Baseline OpenAI end-to-end chat reference architecture](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/architecture/baseline-openai-e2e-chat) - ✍️Azure AI Foundry chat reference architecture.
-- [Build language model pipelines with memory](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/openai/guide/language-model-pipelines) - ✍️Build language model pipelines with memory.
+- [Build language model pipelines with memory](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/openai/guide/language-model-pipelines) - ✍️Baseline Azure AI Foundry chat reference architecture.
+- [Build Long-Running AI Agents on Azure App Service with Microsoft Agent Framework](https://techcommunity.microsoft.com/blog/appsonazureblog/part-2-build-long-running-ai-agents-on-azure-app-service-with-microsoft-agent-fr/4465825) - ✍️Multi-Agent Workflow Travel Planner With WebJob.
 - [Chat with your Azure DevOps data](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/chat-with-your-azure-devops-data/ba-p/4017784) - ✍️The solution leverages Azure DevOps CLI to periodically export ADO Work Items as JSON and store them in Azure Blob storage.
 - [Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automated Feedback](https://www.microsoft.com/en-us/research/group/deep-learning-group/articles/check-your-facts-and-try-again-improving-large-language-models-with-external-knowledge-and-automated-feedback/) - ✍️Improving Large Language Models with External Knowledge and Automated Feedback.
-- [Designing and developing a RAG solution](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-solution-design-and-evaluation-guide) - ✍️Designing and developing a RAG application flow, RAG data pipeline flow.
+- [Copilot Custom Agents for .NET Developers: C# Expert & WinForms Expert](https://devblogs.microsoft.com/dotnet/introducing-custom-agents-for-dotnet-developers-csharp-expert-winforms-expert) - ✍️First two experimental custom agents for .NET developers: C# Expert and WinForms Expert.
+- [Designing and developing a RAG solution](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-solution-design-and-evaluation-guide) - ✍️Designing a RAG application flow, RAG data pipeline flow.
 - [Grounding LLMs](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/grounding-llms/ba-p/3843857) - ✍️Use-cases for Grounding & Retrieval-Augmented Generation (RAG).
 - [How real-world businesses are transforming with AI](https://blogs.microsoft.com/blog/2024/11/12/how-real-world-businesses-are-transforming-with-ai/) - ✍️Collected over 200 examples of how organizations are leveraging Microsoft AI capabilities.
 - [How to develop AI Apps and Agents in Azure – A Visual Guide](https://devblogs.microsoft.com/all-things-azure/how-to-develop-ai-apps-and-agents-in-azure-a-visual-guide/) - ✍️A Visual map to help you decide which Azure AI service is best for your use case.
-- [Integrate private access to your Azure Open AI Chatbot](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/integrate-private-access-to-your-azure-open-ai-chatbot/ba-p/3994613) - ✍️Integrate private access to your Azure Open AI Chatbot.
+- [Integrate private access to your Azure Open AI Chatbot](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/integrate-private-access-to-your-azure-open-ai-chatbot/ba-p/3994613) - ✍️Private access solutions to your Azure Open AI Chatbot.
 - [Microsoft AI / Responsible AI](https://aka.ms/RAIResources) - ✍️Responsible AI resources from Microsoft.
 - [NL to SQL Architecture Alternative](https://techcommunity.microsoft.com/t5/azure-architecture-blog/nl-to-sql-architecture-alternatives/ba-p/4136387) - ✍️LLM to dynamically generate SQL queries, execute those SQL queries.
 - [Optimize Azure OpenAI Applications with Semantic Caching](https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimize-azure-openai-applications-with-semantic-caching/ba-p/4106867) - ✍️Semantic cache pattern for latency and cost reduction.
 - [Partner Resources: AI & ML Academy](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy) - ✍️Comprehensive learning resources for partners and developers.
-- [Responsible AI Transparency Report](https://www.microsoft.com/en-us/corporate-responsibility/responsible-ai-transparency-report) - ✍️Responsible AI Transparency Report.
+- [Responsible AI Transparency Report](https://www.microsoft.com/en-us/corporate-responsibility/responsible-ai-transparency-report) - ✍️Responsible AI Transparency Report about key investments in responsible AI tools, policies, and practices.
 - [Retrieval Augmented Fine Tuning](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/retrieval-augmented-fine-tuning-use-gpt-4o-to-fine-tune-gpt-4o/ba-p/4248861) - ✍️RAFT: Combining the best parts of RAG and fine-tuning (SFT).
-- [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087) - ✍️Revolutionize your Enterprise Data with ChatGPT.
+- [Revolutionize your Enterprise Data with ChatGPT](https://techcommunity.microsoft.com/t5/ai-applied-ai-blog/revolutionize-your-enterprise-data-with-chatgpt-next-gen-apps-w/ba-p/3762087) - ✍️One of well-known RAG application sample utilizing Azure.
 - [Safeguard and trustworthy generative AI applications](https://azure.microsoft.com/en-us/blog/announcing-new-tools-in-azure-ai-to-help-you-build-more-secure-and-trustworthy-generative-ai-applications/) - ✍️Announcing new tools in Azure AI to help you build more secure and trustworthy generative AI applications.
 - [Security Best Practices for GenAI Applications (OpenAI) in Azure](https://techcommunity.microsoft.com/t5/azure-architecture-blog/security-best-practices-for-genai-applications-openai-in-azure/ba-p/4027885) - ✍️The best practices of security for GenAI applications in Azure.
+- [Sovereign controls in data processing for Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/04/microsoft-offers-in-country-data-processing-to-15-countries-to-strengthen-sovereign-controls-for-microsoft-365-copilot/) - ✍️Microsoft 365 Data Residency and Processing commitments map.
 - [Using Keyless Authentication with Azure OpenAI](https://techcommunity.microsoft.com/t5/microsoft-developer-community/using-keyless-authentication-with-azure-openai/ba-p/4111521) - ✍️Entra ID token-based access to Azure OpenAI.
-
----
 
 ## Footnotes 
 
-### Emoji meanings in the list
-- GitHub organizations: 🌐 [Azure](https://github.com/Azure) | 🏬 [Azure-samples](https://github.com/Azure-samples) | 🏛️ [Microsoft](https://github.com/microsoft) | 👥 Azure Accelerators
-- ✍️ Blog post / Documentation / Paper
-- ✨ GitHub repository
+- Emoji meanings in the list: GitHub organizations: 🌐 [Azure](https://github.com/Azure) | 🏬 [Azure-samples](https://github.com/Azure-samples) | 🏛️ [Microsoft](https://github.com/microsoft) | 👥 Azure Accelerators | ✍️ Blog post / Documentation / Paper | ✨ GitHub repository
 
 <!--
 > npx awesome-lint README.md

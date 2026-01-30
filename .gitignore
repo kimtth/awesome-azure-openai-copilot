@@ -146,3 +146,4 @@ package.json
 yarn.lock
 .vscode
 *.py
+gitrepo_list.txt

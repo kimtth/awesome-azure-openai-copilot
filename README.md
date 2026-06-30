@@ -168,6 +168,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Introducing multi-model intelligence in Researcher](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-multi-model-intelligence-in-researcher/4506011) - Researcher adds Critique and Council workflows that combine generation, review, and model comparison for higher-quality deep research.
 - [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-overview) - Cross-suite productivity AI assistance.
 - [Microsoft 365 Copilot Chat](https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat/) - Chat experience (free tier) and pay-as-you-go agents.
+- [Microsoft 365 Copilot ROI Calculator (honest defaults)](https://az365.ai/blog/copilot-roi-calculator-microsoft-enterprises/) - Interactive, skeptical ROI model for Microsoft 365 Copilot with adoption-rate and time-savings sensitivity analysis.
 - [Microsoft already has 80 different products called Copilot](https://www.google.com/amp/s/mezha.ua/en/news/u-microsoft-ye-vzhe-80-riznih-produktiv-iz-nazvoyu-copilot-310076/amp/) - Overview of Microsoft's expanding Copilot product naming footprint.
 - [Microsoft Copilot](https://copilot.microsoft.com/) - Web-based AI assistant (formerly Bing Chat Enterprise).
 - [Microsoft Copilot for Azure](https://learn.microsoft.com/en-us/azure/copilot) - AI-assisted cloud operations for management and optimization.
@@ -194,6 +195,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Azure AI Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352) - Managed service for creating enterprise-grade, multi-agent systems.
 - [Azure AI Foundry Fine Tuning](https://techcommunity.microsoft.com/blog/aiplatformblog/what%E2%80%99s-new-in-azure-ai-foundry-fine-tuning/4413873) - Reinforcement Fine-Tuning (RFT) with o4-mini.
 - [Azure AI Foundry SDK](https://aka.ms/aifoundrysdk/reference) - Unified SDK with pre-built app templates.
+- [Azure AI Foundry vs Azure OpenAI: 2026 Decision](https://az365.ai/blog/azure-ai-foundry-vs-azure-openai-2026-decision/) - Practitioner decision guide for choosing between Azure AI Foundry and Azure OpenAI.
 - [Azure Blob Storage and Run:ai Model Streamer](https://devblogs.microsoft.com/azure-sdk/eliminate-llm-cold-starts-load-models-up-to-6x-faster-with-azure-blob-storage-and-runai-model-streamer/) - Streams model weights from Blob Storage to cut cold starts.
 - [Introducing Deep Research in Azure AI Foundry Agent Service](https://azure.microsoft.com/en-us/blog/introducing-deep-research-in-azure-ai-foundry-agent-service) - Deep Research capabilities in Azure AI Foundry Agent Service.
 - [Microsoft Foundry](https://devblogs.microsoft.com/foundry/) - Azure AI Foundry rebranded as Microsoft Foundry. Blog with recent updates.

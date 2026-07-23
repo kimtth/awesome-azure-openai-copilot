@@ -89,6 +89,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 
 - [agent-governance-toolkit](https://github.com/microsoft/agent-governance-toolkit) - Policy enforcement, identity, and sandboxing for secure enterprise agents.
 - [AI Central](https://github.com/microsoft/AICentral) - Control plane for authenticated, resilient access to multiple OpenAI endpoints.
+- [Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) - Managed text and image moderation service with APIs for harmful-content analysis, groundedness detection, protected material, and custom categories.
 - [Azure AI Evaluation SDK](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/evaluate-sdk) - Evaluation tooling for generative AI quality and safety metrics.
 - [EvalsforAgentsInterop](https://github.com/microsoft/EvalsforAgentsInterop) - Evaluates LLM-powered productivity agents through realistic scenario simulations.
 - [MDASH](https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/) - Multi-model agentic security harness for vulnerability discovery and proof.
@@ -96,6 +97,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Presidio](https://github.com/microsoft/presidio) - Context-aware, pluggable PII detection and de-identification for text and images.
 - [Presidio Research](https://github.com/microsoft/presidio-research) - Data science tools for developing and evaluating Presidio PII recognizers.
 - [PyRIT](https://github.com/Azure/PyRIT) - Risk identification toolkit targeting robustness, safety, and adversarial prompt detection.
+- [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) - Azure AI Content Safety protection for direct user-prompt attacks and indirect prompt injection in third-party documents.
 - [Securing MCP: A Control Plane for Agent Tool Execution](https://developer.microsoft.com/blog/securing-mcp-a-control-plane-for-agent-tool-execution) - Introduces Agent Governance Toolkit for MCP tool definition scanning, policy enforcement, response inspection, identity, and audit logs.
 
 ## Data Processing & Memory
@@ -203,6 +205,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Assistants API](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-announces-assistants-api-new-models-for/ba-p/4049940) - Code Interpreter, Function calling, Knowledge retrieval tool, and Threads.
 - [Azure AI Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357) - Managed agent service in Azure AI Foundry.
 - [Azure AI Content Understanding](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-azure-ai-content-understanding-transforming-multimodal-data-into-insi/4297196) - Transforming Multimodal Data into Insights.
+- [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview) - OCR and document-understanding service for extracting text, tables, structure, and key/value pairs with prebuilt and custom models for intelligent document processing.
 - [Azure AI Foundry](https://ai.azure.com/) - Portal for building, evaluating, and managing AI applications and agents.
 - [Azure AI Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352) - Managed service for creating enterprise-grade, multi-agent systems.
 - [Azure AI Foundry Fine Tuning](https://techcommunity.microsoft.com/blog/aiplatformblog/what%E2%80%99s-new-in-azure-ai-foundry-fine-tuning/4413873) - Reinforcement Fine-Tuning (RFT) with o4-mini.
@@ -441,7 +444,8 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [AI Agent-Driven Auto Insurance Claims RAG Pipeline](https://techcommunity.microsoft.com/t5/azure-architecture-blog/exploring-ai-agent-driven-auto-insurance-claims-rag-pipeline/ba-p/4233779) - Agent-driven claims processing reference.
 - [AI decision tree](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/strategy) - Selecting the most suitable tools and platforms for your generative and nongenerative AI use cases.
 - [AI Feed](https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI) - Azure AI news, events, and discussions.
-- [AI gateway capabilities in Azure API Management](https://techcommunity.microsoft.com/blog/integrationsonazureblog/ai-gateway-enhancements-llm-policies-real-time-api-support-content-safety-and-mo/4409828) - Semantic Caching. Azure AI Content Safety. LLM policies (llm-token-limit, llm-emit-metric, llm-content-safety).
+- [AI gateway capabilities in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities) - Secure, scale, observe, and govern models, agents, MCP servers, and A2A APIs with authentication, token controls, semantic caching, load balancing, and policy enforcement.
+- [AI Gateway Enhancements: LLM policies, Real-Time API support, Content Safety, and more](https://techcommunity.microsoft.com/blog/integrationsonazureblog/ai-gateway-enhancements-llm-policies-real-time-api-support-content-safety-and-mo/4409828) - Semantic Caching. Azure AI Content Safety. LLM policies (llm-token-limit, llm-emit-metric, llm-content-safety).
 - [AI Landing Zones Guardrails for Azure Machine Learning](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-MachineLearning.html) - Recommended Azure Policy initiative for Azure Machine Learning guardrails.
 - [AI Landing Zones Guardrails for Bot Service](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-BotService.html) - Recommended Azure Policy initiative for Bot Service guardrails.
 - [AI Landing Zones Guardrails for Cognitive Services](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-CognitiveServices.html) - Recommended Azure Policy initiative for Cognitive Services guardrails.

@@ -273,8 +273,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 
 ## Microsoft 365 Agent Development
 
-- [Agent 365 SDK - C# /.NET](https://github.com/microsoft/Agent365-dotnet) - .NET samples for Microsoft Agent 365.
-- [Agent 365 SDK - Python](https://github.com/microsoft/Agent365-python) - Python samples for Microsoft Agent 365.
+- [Agent 365 SDK](https://learn.microsoft.com/en-us/microsoft-365/agents-sdk/) - Microsoft Agent 365 extensions for [.NET](https://github.com/microsoft/Agent365-dotnet), [Node.js/TypeScript](https://github.com/microsoft/Agent365-nodejs), and [Python](https://github.com/microsoft/Agent365-python).
 - [Agent 365 SDK Samples and Prompts](https://github.com/microsoft/Agent365-Samples) - Sample scenarios for Microsoft Agent 365.
 - [Agent 365 Skills](https://github.com/microsoft/agent365-skills) - Coding skills for Agent 365, Work IQ, and OpenTelemetry.
 - [Agent Builder & Plan Designer in Power Apps](https://www.microsoft.com/en-us/power-platform/blog/power-apps/build-user-focused-intelligent-solutions-in-power-apps-start-with-a-plan/) - Design and configure intelligent solutions in Power Apps.
@@ -288,11 +287,9 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Copilot Tuning](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-microsoft-365-copilot-tuning/4414762) - Low-code model tuning and grounded agent creation.
 - [Deploying Agentic Services to Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/deploying-existing-agentic-services-to-microsoft-365-copilot-via-gateway-and-obo/4504265) - Gateway and OBO pattern for existing agentic services.
 - [Introducing Copilot Actions, new agents, Copilot Control System](https://www.microsoft.com/en-us/microsoft-365/blog/2024/11/19/introducing-copilot-actions-new-agents-and-tools-to-empower-it-teams/) - New agent capabilities and management tools for IT teams.
-- [Microsoft 365 Agents SDK](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-365-agents-sdk/) - The evolution of the Bot Framework to build AI Agents.
-- [Microsoft 365 Agents SDK - C# /.NET](https://github.com/microsoft/Agents-for-net) - Microsoft 365 Agent SDK components for .NET.
-- [Microsoft 365 Agents SDK - Python](https://github.com/microsoft/Agents-for-python) - Microsoft 365 Agent SDK components for Python.
+- [Microsoft 365 Agents SDK](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-365-agents-sdk/) - The evolution of Bot Framework for building AI agents, with components for [.NET](https://github.com/microsoft/Agents-for-net), [Node.js/TypeScript](https://github.com/microsoft/Agents-for-js), and [Python](https://github.com/microsoft/Agents-for-python).
 - [Microsoft 365 Copilot APIs Client Libraries](https://github.com/microsoft/Agents-M365Copilot) - Client libraries for Microsoft 365 Copilot APIs.
-- [Microsoft 365 Copilot - App Builder and Workflows](https://www.microsoft.com/en-us/microsoft-365/blog/2025/10/28/microsoft-365-copilot-now-enables-you-to-build-apps-and-workflows/) - Build working apps & workflows using natural language.
+- [Microsoft 365 Copilot App Builder and Workflows](https://www.microsoft.com/en-us/microsoft-365/blog/2025/10/28/microsoft-365-copilot-now-enables-you-to-build-apps-and-workflows/) - Build working apps & workflows using natural language.
 - [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Customization and orchestration environment (formerly Power Virtual Agents).
 - [Power Apps MCP closed-loop learning](https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-apps-mcp-server-introduces-closed-loop-learning-for-enterprise-agents/) - Agent corrections become organization-scoped memory and optimized instructions.
 - [Power CAT](https://microsoft.github.io/powercat/) - Microsoft Power CAT tools for Power Platform and Copilot Studio adoption.
@@ -300,6 +297,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Power Platform Prompts](https://github.com/pnp/powerplatform-prompts) - Prompt examples for GPT-powered Power Platform workflows.
 - [SharePoint Agent](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/ignite-2024-agents-in-sharepoint-now-in-general-availability/4298746) - Turn SharePoint sites and documents into interactive agents.
 - [SharePoint Copilot Apps](https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/) - Builds interactive SPFx components directly into the Copilot canvas.
+- [Teams SDK](https://learn.microsoft.com/microsoftteams/platform/teams-sdk/) - Both `Teams SDK` and `Microsoft 365 Agents SDK` originate from the legacy, multi-channel [Bot Framework](https://learn.microsoft.com/microsoftteams/platform/teams-sdk/migrations/botbuilder/overview). Teams SDK succeeds the deprecated Teams AI Library v1 and focuses on Teams extensibility—Adaptive Cards, tabs, dialogs, message extensions, meetings, and SSO—whereas Microsoft 365 Agents SDK is the multi-channel evolution of Bot Framework.
 
 ## Learning Resources & Workshops
 

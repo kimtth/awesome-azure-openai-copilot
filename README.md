@@ -334,6 +334,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Automated Compliance Agents Hackathon](https://github.com/microsoft/azure-trust-agents) - Hands-on hackathon challenges for multi-agent financial compliance workflows.
 - [Azure AI Foundry & Agents Workshop](https://github.com/microsoft/agentic-ai-lab) - Workshop materials for building agents with Azure AI Foundry.
 - [Copilot Developer Camp](https://github.com/microsoft/copilot-camp) - Hands-on labs for extending Microsoft 365 Copilot and building custom agents.
+- [Copilot Newsdesk](https://www.copilotnewsdesk.com/) - Independent, source-linked commentary and practical guides on workplace Microsoft Copilot, including workflows, licensing, and interface changes.
 - [Copilot Studio Labs](https://microsoft.github.io/mcs-labs/) - Hands-on labs for building AI agents with Microsoft Copilot Studio.
 - [Copilot System Overview (video)](https://www.youtube.com/watch?v=E5g20qmeKpg) - Copilot Architecture explanation video.
 - [EdgeAI for Beginners](https://github.com/microsoft/edgeai-for-beginners) - Small Language Models (SLMs) optimized samples for On-device inference.

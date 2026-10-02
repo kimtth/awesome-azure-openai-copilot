@@ -4,6 +4,8 @@
 
 Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Microsoft Copilot is the family of AI assistants and platforms built into Microsoft products and developer workflows.
 
+<!-- Entries whose GitHub repositories are archived are regularly moved to archived.md. -->
+
 ## Contents
 
 - [Azure OpenAI & Foundry Overview](#azure-openai--foundry-overview)
@@ -14,6 +16,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Safety, Security & LLMOps](#safety-security--llmops)
 - [Data Processing & Memory](#data-processing--memory)
 - [Dev Tools, MCP & Extensions](#dev-tools-mcp--extensions)
+- [.NET Development & Legacy Modernization](#net-development--legacy-modernization)
 - [Copilot Product Catalog](#copilot-product-catalog)
 - [Microsoft Foundry & AI Services](#microsoft-foundry--ai-services)
 - [Azure AI Search](#azure-ai-search)
@@ -42,12 +45,9 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 
 ## Prompt Engineering & Tooling
 
-- [GenAIScript](https://github.com/microsoft/genaiscript) - JavaScript framework to orchestrate LLM calls, tools, and data in unified scripts.
 - [guidance](https://github.com/microsoft/guidance) - DSL for structured prompting and controlled generation with chain-of-thought patterns.
 - [LLMLingua](https://github.com/microsoft/LLMLingua) - Prompt and KV-cache compression achieving substantial token reduction with minimal quality loss.
 - [LMOps](https://github.com/microsoft/LMOps) - Toolkit for optimizing and evaluating prompt quality across multimodal scenarios.
-- [PromptBench](https://github.com/microsoft/promptbench) - Unified framework for large language model prompt evaluation.
-- [Prompt Engine](https://github.com/microsoft/prompt-engine) - Utilities for systematic prompt authoring and experimentation (Python variant available).
 - [Promptions](https://github.com/microsoft/Promptions) - "Prompt" plus "options". Ephemeral UI for prompt refinement — a flexible dynamic prompt middleware.
 - [Prompty](https://github.com/microsoft/prompty) - Template language for prompt definition.
 - [SAMMO](https://github.com/microsoft/sammo) - Framework for automated prompt optimization through search and evaluation loops.
@@ -56,20 +56,22 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 ## Agent Frameworks
 
 - [AGDebugger](https://github.com/microsoft/agdebugger) - Visual tool for AutoGen-based multi-agent debugging.
+- [Agent Harness: Making Your Claw Production-Ready](https://devblogs.microsoft.com/agent-framework/agent-harness-making-your-claw-production-ready/) - Adds observability, governance, hosting, and evaluations to a shared agent.
 - [Agent Harness: Scaling Capabilities](https://devblogs.microsoft.com/agent-framework/agent-harness-scaling-the-claw-or-harness-capabilities/) - Adds skills, shell access, CodeAct, and background agents to a harness.
 - [Agent Lightning](https://github.com/microsoft/agent-lightning) - Train and optimize agents (including RL, prompt‑optimization, multi‑agent workflows).
 - [AIOpsLab](https://www.microsoft.com/en-us/research/blog/aiopslab-building-ai-agents-for-autonomous-clouds/) - Research-driven AI agents for cloud incident analysis and root cause automation.
 - [AutoGen](https://github.com/microsoft/autogen) - Customizable multi-agent conversation and tool orchestration framework (community AG2 and Microsoft variants).
 - [Copilot SDK](https://github.com/github/copilot-sdk) - Multi-platform SDK for integrating GitHub Copilot Agent into apps and services.
 - [ExACT](https://github.com/microsoft/ExACT) - Adaptive retrieval and planning using interaction memory and Monte Carlo Tree Search.
+- [From Specialist Agents to Distributed Skills over MCP](https://devblogs.microsoft.com/agent-framework/from-specialist-agents-to-distributed-skills-over-mcp/) - Compares delegated agent reasoning with shared instructions and remote MCP operations.
 - [JARVIS](https://github.com/microsoft/JARVIS) - Bridge connecting LLMs with specialized AI models for composite task execution.
 - [Magentic-Marketplace](https://github.com/microsoft/multi-agent-marketplace) - Market simulation using agents.
 - [Magentic-One](https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/) - Generalist multi-agent system for complex multi-step automation.
 - [OmniParser](https://github.com/microsoft/OmniParser) - Vision-based GUI parsing for screen-grounded agent control.
+- [Orchard](https://github.com/microsoft/Orchard) - Open-source framework for agentic modeling.
 - [Qlib](https://github.com/microsoft/qlib) - Quantitative finance platform integrating supervised, temporal, and reinforcement modeling.
 - [RD-Agent](https://github.com/microsoft/RD-Agent) - Open-source R&D automation for structured experimentation workflows.
 - [Semantic Workbench](https://github.com/microsoft/semanticworkbench) - Development environment for intelligent multi-agent scenario design and debugging.
-- [TaskWeaver](https://github.com/microsoft/TaskWeaver) - Code-first natural language to executable workflow translation with rich data planning.
 - [TinyTroupe](https://github.com/microsoft/TinyTroupe) - Multi-agent persona simulation for scenario exploration and insight generation.
 - [TypeAgent](https://github.com/microsoft/TypeAgent) - Personal-agent architecture using structured prompting, action schemas, and Structured RAG memory.
 - [UFO](https://github.com/microsoft/UFO) - UI-centric Windows interaction agent for system-level task automation.
@@ -90,30 +92,37 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 
 - [Agent Governance Toolkit](https://github.com/microsoft/agent-governance-toolkit) - Policy enforcement, identity, and sandboxing for secure enterprise agents.
 - [AI Central](https://github.com/microsoft/AICentral) - Control plane for authenticated, resilient access to multiple OpenAI endpoints.
-- [Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) - Managed text and image moderation service with APIs for harmful-content analysis, groundedness detection, protected material, and custom categories.
+- [Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) - Managed text and image moderation service, with APIs for harmful-content analysis, groundedness detection, protected material, and custom categories.
 - [Azure AI Evaluation SDK](https://learn.microsoft.com/en-us/azure/ai-studio/how-to/develop/evaluate-sdk) - Evaluation tooling for generative AI quality and safety metrics.
 - [EvalsforAgentsInterop](https://github.com/microsoft/EvalsforAgentsInterop) - Evaluates LLM-powered productivity agents through realistic scenario simulations.
+- [Foundry Agent Guardrails](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/guardrails) - Controls agent behavior, whereas [Agent 365](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/18/microsoft-agent-365-the-control-plane-for-ai-agents/) governs agent identity, security, and lifecycle.
 - [Foundry Control Plane and Agent 365](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-control-plane-and-agent-365-two-control-planes-walk-into-an-enterprise/4520185) - Explains developer and IT governance control planes: Agent 365 → Purview → Defender → Foundry Guardrails → APIM → Content Safety → models.
+- [Humanist AI in Practice: MAI Code of Conduct](https://microsoft.ai/news/mai-code-of-conduct/) - Draft human-centered behavior standards for MAI models, open for public consultation.
+- [Japanese LLM Evaluation Pipeline](https://devblogs.microsoft.com/ise/japanese-llm-evaluation-pipeline-hackathon/) - Multi-turn Japanese conversation benchmark with facet-based evaluation and cost-aware model selection.
 - [MCP Enterprise Authorization](https://techcommunity.microsoft.com/blog/appsonazureblog/mcp-enterprise-authorization-is-here-%E2%80%94-what-entra-and-app-service-can-do-today/4537433) - Explains Entra-governed MCP authorization and the EMA ID-JAG protocol.
 - [MDASH](https://www.microsoft.com/en-us/security/blog/2026/05/12/defense-at-ai-speed-microsofts-new-multi-model-agentic-security-system-tops-leading-industry-benchmark/) - Multi-model agentic security harness for vulnerability discovery and proof.
 - [Microsoft Entra Agent ID](https://techcommunity.microsoft.com/blog/microsoft-entra-blog/announcing-microsoft-entra-agent-id-secure-and-manage-your-ai-agents/3827392) - Central registration and governance for organizational AI agents.
 - [Not All Model Upgrades Are Upgrades](https://developer.microsoft.com/blog/not-all-model-upgrades-are-upgrades) - Shows why model changes need workload-specific cost and quality evaluation.
 - [Presidio](https://github.com/microsoft/presidio) - Context-aware, pluggable PII detection and de-identification for text and images.
 - [Presidio Research](https://github.com/microsoft/presidio-research) - Data science tools for developing and evaluating Presidio PII recognizers.
-- [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) - Azure AI Content Safety protection for direct user-prompt attacks and indirect prompt injection in third-party documents.
-- [PyRIT](https://github.com/Azure/PyRIT) - Risk identification toolkit targeting robustness, safety, and adversarial prompt detection.
+- [Prompt Shields](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection) - Azure AI Content Safety protection for direct user-prompt attacks and indirect prompt injection embedded in third-party documents.
+- [PyRIT](https://github.com/microsoft/PyRIT) - Risk identification toolkit targeting robustness, safety, and adversarial prompt detection.
 - [Securing MCP: A Control Plane for Agent Tool Execution](https://developer.microsoft.com/blog/securing-mcp-a-control-plane-for-agent-tool-execution) - Introduces Agent Governance Toolkit for MCP tool definition scanning, policy enforcement, response inspection, identity, and audit logs.
+- [TokenOps](https://github.com/theagentplane/tokenops) - Enforces run-scoped token budgets before each agent model call.
 
 ## Data Processing & Memory
 
 - [Azure HorizonDB](https://techcommunity.microsoft.com/blog/adforpostgresql/announcing-azure-horizondb/4469710) - New PostgreSQL service with advanced DiskANN vector indexing and large-scale replication.
 - [Data Formulator](https://github.com/microsoft/data-formulator) - Iterative AI-assisted creation and transformation of data visualizations.
 - [DiskANN](https://github.com/microsoft/DiskANN) - Graph-based indices for scalable and fast approximate nearest neighbor search.
+- [Fabric IQ Ontology MCP Server](https://learn.microsoft.com/en-us/fabric/iq/ontology/overview) - Connects Fabric IQ ontology data to agents through an MCP server.
+- [Foundry IQ with D365F&O and Fabric IQ](https://techcommunity.microsoft.com/blog/azurearchitectureblog/foundry-iq-with-d365fo-and-fabric-iq/4557380) - Combines Fabric ontology, ERP data, and enterprise knowledge for retail decisions.
 - [Kernel Memory](https://github.com/microsoft/kernel-memory) - Service and plugins for scalable ingestion, hybrid embedding, and memory pipelines.
 - [MarkItDown](https://github.com/microsoft/markitdown) - Conversion utility for office and structured documents to Markdown.
 - [Memora](https://github.com/microsoft/Memora) - Harmonic agent-memory representation balancing abstraction with specificity.
 - [Microsoft Fabric](https://learn.microsoft.com/en-us/fabric/) - Unified platform combining data integration, engineering, warehousing, and BI.
 - [NLWeb](https://github.com/microsoft/NLWeb) - Conversational interfaces for web data with MCP, Schema.org, and RSS support.
+- [Ontology Playground](https://github.com/microsoft/Ontology-Playground) - Static web app for learning, visually designing, and exporting ontologies, including Microsoft Fabric IQ examples.
 
 ## Dev Tools, MCP & Extensions
 
@@ -121,7 +130,6 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Agent 365 DevTools CLI](https://github.com/microsoft/Agent365-devTools) - CLI for developing, deploying, and managing Microsoft Agent 365 applications.
 - [Agent Harnesses in VS Code](https://code.visualstudio.com/blogs/2026/05/15/agent-harnesses-github-copilot-vscode) - VS Code blog on agent harnesses for GitHub Copilot.
 - [Agent Skills](https://github.com/microsoft/agent-skills) - 131 skills, MCP configs, and agents for Azure SDK and AI Foundry development.
-- [AIShell](https://github.com/PowerShell/AIShell) - Interactive PowerShell shell integrating AI-assisted command workflows.
 - [AI Toolkit for VS Code](https://github.com/microsoft/vscode-ai-toolkit) - VS Code extension integrating local and cloud AI workflows.
 - [APM - Agent Package Manager](https://github.com/microsoft/apm) - Dependency manager for AI agents — declare skills, prompts, and tools in `apm.yml`.
 - [Awesome GitHub Copilot](https://awesome-copilot.github.com/) - Community catalog of Copilot agents, instructions, skills, hooks, workflows, plugins, tools, and learning resources.
@@ -133,10 +141,10 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Claude Code + MS Foundry](https://devblogs.microsoft.com/all-things-azure/claude-code-microsoft-foundry-enterprise-ai-coding-agent-setup/) - Claude Code + Microsoft Foundry enterprise setup on Azure.
 - [Copilot Studio Extension for Visual Studio Code](https://github.com/microsoft/vscode-copilotstudio) - VS Code extension for authoring and syncing Copilot Studio agents.
 - [Cosmos DB Agent Kit](https://github.com/AzureCosmosDB/cosmosdb-agent-kit) - A collection of skills for AI coding agents working with Azure Cosmos DB.
+- [DebugMCP](https://github.com/microsoft/DebugMCP) - Gives VS Code agents debugger capabilities including breakpoints, stepping, and inspection.
 - [ExcelMcp - MCP Server for Microsoft Excel](https://github.com/sbroenne/mcp-server-excel) - MCP server that lets AI assistants (e.g. via GitHub Copilot or other LLM-based agents) control Microsoft Excel — automate Power Query, VBA, DAX, formatting, and more.
 - [Foundry-Local](https://github.com/microsoft/Foundry-Local) - Local-first dev setup for Microsoft Foundry projects.
 - [GitHub App](https://github.com/github/app) - GitHub's MCP-enabled application surface for agent integrations.
-- [GitHub Copilot Chat for VS Code](https://github.com/microsoft/vscode-copilot-chat) - In-editor contextual multi-turn AI assistance.
 - [GitHub Copilot CLI](https://github.com/github/copilot-cli) - AI-powered coding assistance in your terminal.
 - [GitHub Copilot Office Add-in](https://github.com/patniko/github-copilot-office) - GitHub Copilot add-in for Word, Excel, and PowerPoint.
 - [Hypervelocity Engineering (HVE) Core](https://github.com/microsoft/hve-core) - Hypervelocity Engineering assets: agents, instructions, prompts, and Copilot workflows.
@@ -151,11 +159,20 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Power BI Modeling MCP Server](https://github.com/microsoft/powerbi-modeling-mcp) - Power BI semantic modeling capabilities to your AI agents through a local MCP server.
 - [Power Platform Skills](https://github.com/microsoft/power-platform-skills) - Skill marketplace for Claude Code, Copilot, Power Apps, and Power Pages.
 - [Rayfin](https://community.fabric.microsoft.com/t5/Fabric-Updates-Blog/Introducing-Rayfin-A-new-AI-first-way-to-build-deploy-and-govern/ba-p/5191676) - AI-first SDK/CLI for code-defined Fabric backends with data, identity, APIs, and governance.
+- [Skill Recorder](https://github.com/microsoft/skill-recorder) - Records an on-screen workflow and uses GitHub Copilot CLI to turn its intent and ordered steps into a reusable skill or automation.
 - [Stateless MCP on App Service](https://techcommunity.microsoft.com/blog/appsonazureblog/mcp-just-went-stateless-%E2%80%94-what-the-2026-spec-changes-about-scaling-on-app-servic/4530222) - Explains MCP spec changes for scalable App Service hosting.
-- [SWE-bench-Live](https://github.com/microsoft/SWE-bench-Live) - Evaluating your AI system on latest software engineering tasks. (NeurIPS 2025 D&B).
+- [SWE-bench-Live](https://github.com/microsoft/SWE-bench-Live) - Benchmark for evaluating AI systems on recent software engineering tasks.
 - [Wassette](https://github.com/microsoft/wassette) - Runs WebAssembly Components as MCP tools with Wasmtime sandbox isolation.
 - [Waza](https://github.com/microsoft/waza) - Go CLI for creating, testing, measuring, and improving agent skills and custom agents.
 - [WorkIQ CLI and MCP](https://github.com/microsoft/work-iq-mcp) - MCP Server and CLI for accessing Work IQ.
+
+## .NET Development & Legacy Modernization
+
+- [Azure App Service Managed Instance](https://learn.microsoft.com/en-us/azure/app-service/overview#managed-instance-on-app-service) - PaaS option for compatible Windows applications that need COM, registry, MSI, drive mapping, managed identity, or virtual-network integration.
+- [Azure Migrate](https://learn.microsoft.com/en-us/azure/migrate/migrate-services-overview) - Discovers and assesses servers, databases, and web applications for Azure IaaS and PaaS targets, including readiness, cost, and dependency analysis.
+- [Choose an Azure Compute Service](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/compute-decision-tree) - Decision tree for matching application requirements, migration strategy, operations, networking, scaling, and specialized workloads to Azure compute services.
+- [GitHub Copilot App Modernization](https://learn.microsoft.com/en-us/dotnet/core/porting/github-copilot-upgrade/overview) - AI-assisted assessment, upgrade planning, and code modernization for .NET Framework and older .NET applications.
+- [Upgrade .NET Apps Overview](https://learn.microsoft.com/en-us/dotnet/core/porting/) - Official guidance for moving .NET Framework applications to modern .NET, modernizing them, and migrating them to cloud services.
 
 ## Copilot Product Catalog
 
@@ -173,18 +190,20 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Copilot in Azure Quantum](https://learn.microsoft.com/en-us/azure/quantum/get-started-azure-quantum) - Quantum workload guidance with Copilot integration.
 - [Copilot in Windows](https://learn.microsoft.com/en-us/copilot/copilot) - System-level AI integration in Windows.
 - [Copilot Pages](https://techcommunity.microsoft.com/en-us/microsoft-365-copilot/announcing-copilot-pages-for-multiplayer-collaboration/ba-p/4242701) - Persistent collaborative canvas in Copilot chat.
-- [Copilot+ PCs](https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/) - Windows PCs with integrated NPUs for AI workloads.
 - [Copilot Pro](https://support.microsoft.com/en-us/copilot-pro) - Premium Copilot features, model priority, and M365 integration.
 - [Copilot Scenario Library](https://adoption.microsoft.com/en-us/copilot-scenario-library/) - Examples of Copilot business use cases.
 - [Copilot Tasks](https://www.microsoft.com/en-us/microsoft-copilot/blog/2026/02/26/copilot-tasks-from-answers-to-actions/) - Copilot executes delegated tasks like booking, research, and purchasing.
 - [Copilot Usage Report 2025](https://microsoft.ai/news/its-about-time-the-copilot-usage-report-2025) - Health queries dominate mobile use, programming peaks on weekdays and gaming on weekends, and February sees a Valentine's Day spike in relationship and personal growth conversations.
 - [Copilot Vision](https://www.microsoft.com/en-us/microsoft-copilot/blog/2024/12/05/copilot-vision-now-in-preview-a-new-way-to-browse/) - Edge experience for browsing with on-page visual grounding.
-- [Cowork Investment Assessment](https://github.com/microsoft/cowork-investment-assessment) - Estimates Microsoft 365 Copilot Cowork value from Work IQ signals. [Guide](https://techcommunity.microsoft.com/blog/partnernews/sizing-copilot-credits-for-cowork-let-your-users-use-cowork-investment-advisor-a/)
+- [Copilot+ PCs](https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/) - Windows PCs with integrated NPUs for AI workloads.
+- [Cowork Investment Assessment](https://github.com/microsoft/cowork-investment-assessment) - Estimates Microsoft 365 Copilot Cowork value from Work IQ signals. [Guide](https://techcommunity.microsoft.com/blog/partnernews/sizing-copilot-credits-for-cowork-let-your-users-use-cowork-investment-advisor-a/4538329).
+- [Dragon Copilot](https://learn.microsoft.com/en-us/industry/healthcare/dragon-copilot/) - Secure, extensible clinical AI workspace for documentation and care workflows, with developer kits, APIs, SDKs, and AI-agent extensions.
 - [Dynamics 365 Copilot](https://learn.microsoft.com/en-us/microsoft-cloud/dev/copilot/copilot-for-dynamics365) - Embedded generative assistance across Dynamics workloads.
 - [Fabric Copilot](https://learn.microsoft.com/en-us/fabric/get-started/copilot-fabric-overview) - Copilot features for Fabric.
 - [GitHub Copilot](https://docs.github.com/en/copilot/getting-started-with-github-copilot) - AI pair programming for code completion and chat.
 - [How Many Products Does Microsoft Have Named 'Copilot'?](https://teybannerman.com/strategy/2026/03/31/how-many-microsoft-copilot-are-there.html) - Maps 81 Microsoft Copilot-branded products and features.
 - [Introducing Multi-Model Intelligence in Researcher](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-multi-model-intelligence-in-researcher/4506011) - Researcher adds Critique and Council workflows that combine generation, review, and model comparison for higher-quality deep research.
+- [Introducing the New Copilot with Home, Code and Autopilot](https://blogs.microsoft.com/blog/2026/09/25/introducing-the-new-copilot-with-home-code-and-autopilot/) - Introduces Copilot modes for chat, building solutions, and persistent autonomous work.
 - [Microsoft 365 Copilot](https://learn.microsoft.com/en-us/microsoft-365-copilot/microsoft-365-copilot-overview) - Cross-suite productivity AI assistance.
 - [Microsoft 365 Copilot Chat](https://www.microsoft.com/en-us/microsoft-365/blog/2025/01/15/copilot-for-all-introducing-microsoft-365-copilot-chat/) - Chat experience (free tier) and pay-as-you-go agents.
 - [Microsoft 365 Copilot ROI Calculator (honest defaults)](https://az365.ai/blog/copilot-roi-calculator-microsoft-enterprises/) - Interactive, skeptical ROI model for Microsoft 365 Copilot with adoption-rate and time-savings sensitivity analysis.
@@ -212,18 +231,22 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Assistants API](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/azure-openai-service-announces-assistants-api-new-models-for/ba-p/4049940) - Code Interpreter, Function calling, Knowledge retrieval tool, and Threads.
 - [Azure AI Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/introducing-azure-ai-agent-service/4298357) - Managed agent service in Azure AI Foundry.
 - [Azure AI Content Understanding](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-azure-ai-content-understanding-transforming-multimodal-data-into-insi/4297196) - Transforming Multimodal Data into Insights.
-- [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview) - OCR and document-understanding service for extracting text, tables, structure, and key/value pairs with prebuilt and custom models for intelligent document processing.
+- [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview) - OCR and document-understanding service for extracting text, tables, structure, and key/value pairs, with prebuilt and custom models for intelligent document processing.
 - [Azure AI Foundry](https://ai.azure.com/) - Portal for building, evaluating, and managing AI applications and agents.
-- [Azure AI Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352) - Managed service for creating enterprise-grade, multi-agent systems.
+- [Azure AI Foundry Agent Service](https://techcommunity.microsoft.com/blog/azure-ai-services-blog/announcing-general-availability-of-azure-ai-foundry-agent-service/4414352) - Managed service for creating enterprise-grade, multi-agent systems; offers Prompt, Workflow, and Hosted agent types.
 - [Azure AI Foundry Fine-Tuning](https://techcommunity.microsoft.com/blog/aiplatformblog/what%E2%80%99s-new-in-azure-ai-foundry-fine-tuning/4413873) - Reinforcement Fine-Tuning (RFT) with o4-mini.
 - [Azure AI Foundry SDK](https://aka.ms/aifoundrysdk/reference) - Unified SDK with pre-built app templates.
 - [Azure AI Foundry vs Azure OpenAI: 2026 Decision](https://az365.ai/blog/azure-ai-foundry-vs-azure-openai-2026-decision/) - Practitioner decision guide for choosing between Azure AI Foundry and Azure OpenAI.
 - [Azure Blob Storage and Run:ai Model Streamer](https://devblogs.microsoft.com/azure-sdk/eliminate-llm-cold-starts-load-models-up-to-6x-faster-with-azure-blob-storage-and-runai-model-streamer/) - Streams model weights from Blob Storage to cut cold starts.
 - [Azure OpenAI PTU vs PAYG Break-even](https://az365.ai/blog/azure-openai-ptu-vs-payg-real-break-even/) - Cost comparison for Azure OpenAI provisioned throughput and pay-as-you-go.
 - [Choose the Right Speech and Voice Model](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/choose-the-right-speech-and-voice-model/4533856) - Decision guide for Foundry speech, voice, transcription, and realtime models.
+- [Fabric Data Agents in Copilot Studio GA](https://community.fabric.microsoft.com/blog/fbc_fabricupdatesblogs/fabric-data-agents-in-microsoft-copilot-studio-generally-available/5362882) - Announces general availability of Fabric data agents in Microsoft Copilot Studio.
 - [Foundry IQ Knowledge Bases](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-iq-improve-recall-by-up-to-54-with-knowledge-bases/4524852) - Improve enterprise recall for agents.
+- [Foundry Playground Behind Private Networking](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/it-wasnt-the-private-endpoint-why-the-foundry-playground-breaks-behind-private-n/4552771) - Explains browser Local Network Access failures affecting the Foundry playground behind private networking.
 - [Introducing Deep Research in Azure AI Foundry Agent Service](https://azure.microsoft.com/en-us/blog/introducing-deep-research-in-azure-ai-foundry-agent-service) - Deep Research capabilities in Azure AI Foundry Agent Service.
 - [Introducing Toolboxes in Foundry](https://devblogs.microsoft.com/foundry/introducing-toolboxes-in-foundry/) - Centrally curates reusable agent tools behind one MCP endpoint.
+- [Memory in Foundry Agent Service](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/memory-usage) - Create scoped memory stores so agents retain context across sessions.
+- [Microsoft Copilot Managed Runtime SDK](https://aka.ms/CopilotManagedRuntime-Blog) - SDK and hosted runtime for building, governing, deploying, and monitoring enterprise Copilot agents.
 - [Microsoft Foundry](https://devblogs.microsoft.com/foundry/) - Azure AI Foundry rebranded as Microsoft Foundry. Blog with recent updates.
 - [Responses API](https://devblogs.microsoft.com/foundry/introducing-new-tools-and-features-in-the-responses-api-in-azure-ai-foundry/) - Chat Completions API with the advanced tool-calling capabilities.
 - [Weights & Biases with Azure](https://aka.ms/WBFineTuningPartnership) - Fine-Tuning with Weights & Biases and Azure OpenAI.
@@ -236,14 +259,13 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Azure AI Search Documentation](https://learn.microsoft.com/en-us/azure/search/) - Official product documentation and tutorials for Azure AI Search.
 - [Azure AI Search Multimodal Sample](https://github.com/Azure-Samples/azure-ai-search-multimodal-sample) - Demonstrates multimodal ingestion and retrieval patterns.
 - [Azure AI Search OpenAI Purview Data Security Demo](https://github.com/Azure-Samples/azure-search-openai-demo-purviewdatasecurity) - Demo integrating Azure Search, OpenAI, and Purview data security.
-- [Azure AI Search: Outperforming Vector Search With Hybrid Retrieval and Reranking](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) - Vector search with hybrid retrieval and reranking.
 - [Azure AI Search Power Skills](https://github.com/Azure-Samples/azure-search-power-skills) - Custom skills for Azure AI Search.
 - [Azure AI Search Python Playground](https://github.com/farzad528/azure-ai-search-python-playground) - A collection of Jupyter notebooks designed to explore the various capabilities of Azure AI Search.
 - [Azure AI Search Samples](https://github.com/Azure-Samples/azureai-samples) - Official sample code for Azure AI Search.
+- [Azure AI Search: Outperforming Vector Search With Hybrid Retrieval and Reranking](https://techcommunity.microsoft.com/t5/azure-ai-services-blog/azure-cognitive-search-outperforming-vector-search-with-hybrid/ba-p/3929167) - Vector search with hybrid retrieval and reranking.
 - [Document-Level Access Control](https://learn.microsoft.com/en-us/azure/search/search-document-level-access-overview) - Document-level access helps restrict content visibility to authorized users, based on predefined access rules.
 - [Integrated Vectorization](https://techcommunity.microsoft.com/t5/ai-azure-ai-services-blog/integrated-vectorization-with-azure-openai-for-azure-ai-search/ba-p/4206836) - Automatically splits documents into chunks, creates embeddings with Azure OpenAI, maps them to an Azure AI Search index, and automates query vectorization.
 - [Python Samples for Azure AI Search](https://github.com/Azure-Samples/azure-search-python-samples) - Python samples used in Azure AI Search Documentation.
-- [RAG-Knowledge](https://github.com/microsoft/RAG-Knowledge) - Sample code for Data Preprocessing, Chunking, Index Design, Query Optimization.
 - [Relevance Scoring in Hybrid Search](https://learn.microsoft.com/en-us/azure/search/hybrid-search-ranking) - Hybrid search with Reciprocal Rank Fusion (RRF).
 - [REST Examples for Azure AI Search](https://github.com/Azure-Samples/azure-search-rest-samples) - REST sample requests for search features.
 - [SPANN](https://www.microsoft.com/en-us/research/publication/spann-highly-efficient-billion-scale-approximate-nearest-neighbor-search/) - Memory-disk hybrid ANN index outperforming DiskANN on billion-scale datasets.
@@ -253,13 +275,14 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 ## Agent Development
 
 - [Adding Aspire to a Python RAG Application](https://devblogs.microsoft.com/aspire/adding-aspire-to-a-python-rag-application/) - Use Aspire for local orchestration and observability in Python RAG apps.
-- [AgenticOps with AKS-Lab-GitHubCopilot](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916) - Field guide for scoped Copilot custom coding agents.
 - [Agentic Patterns Playbook](https://az365.ai/blog/microsoft-agentic-patterns-playbook-decode-2026/) - Playbook for Microsoft-oriented agent design patterns.
 - [Agentic Platform Engineering](https://github.com/microsoftgbb/agentic-platform-engineering) - Platform engineering patterns using GitHub Copilot agents and golden paths.
+- [AgenticOps with AKS-Lab-GitHubCopilot](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/six-coding-agents-one-production-system-a-field-guide-to-agenticops-with-aks-lab/4519916) - Field guide for scoped Copilot custom coding agents.
 - [AI BAST Agents Library](https://github.com/microsoft/aibast-agents-library) - AI BAST Specialist Team agents library. Rapid Agent Prototype Pattern (RAPP).
 - [Aspire Azure Enterprise Networking](https://devblogs.microsoft.com/aspire/aspire-azure-enterprise-networking/) - Enterprise networking guidance for Aspire-hosted Azure applications.
-- [Building a Real-Time Multi-Agent UI with AG-UI and Microsoft Agent Framework Workflows](https://devblogs.microsoft.com/agent-framework/ag-ui-multi-agent-workflow-demo/) - MAF Python workflow sample streaming handoffs, interrupts, and human approvals to a React UI via AG-UI.
+- [Azure Container Apps Sandboxes](https://techcommunity.microsoft.com/blog/appsonazureblog/azure-container-apps-sandboxes-now-generally-available/4559125) - Hardware-isolated microVMs with egress control, snapshots, and telemetry for running agent code.
 - [Build Long-Running AI Agents on Azure App Service with Microsoft Agent Framework](https://techcommunity.microsoft.com/blog/appsonazureblog/part-2-build-long-running-ai-agents-on-azure-app-service-with-microsoft-agent-fr/4465825) - Multi-Agent Workflow Travel Planner With WebJob.
+- [Building a Real-Time Multi-Agent UI with AG-UI and Microsoft Agent Framework Workflows](https://devblogs.microsoft.com/agent-framework/ag-ui-multi-agent-workflow-demo/) - MAF Python workflow sample streaming handoffs, interrupts, and human approvals to a React UI via AG-UI.
 - [Deploy MAF agents with Foundry Hosted Agents](https://devblogs.microsoft.com/agent-framework/from-local-to-production-deploy-your-microsoft-agent-framework-agent-with-foundry-hosted-agents/) - Production deployment path for Microsoft Agent Framework agents.
 - [Foundry Agents and Custom Engine Agents through the Corporate Firewall](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/foundry-agents-and-custom-engine-agents-through-the-corporate-firewall/4502218) - APIM/YARP pattern for exposing private Foundry and custom agents to Teams and Copilot with Bot JWT validation.
 - [FoundryIQ-and-Agent-Framework-demo](https://github.com/leyredelacalzada/FoundryIQ-and-Agent-Framework-demo) - Multi-agent demo using Microsoft Agent Framework SDK and Azure AI Foundry with FoundryIQ.
@@ -267,9 +290,10 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Microsoft Agent Factory](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-microsoft-agent-factory/4470732) - Program for building agents with Work IQ, Fabric IQ, Foundry IQ via Microsoft Foundry & Copilot Studio.
 - [Microsoft Discovery](https://azure.microsoft.com/en-us/blog/transforming-rd-with-agentic-ai-introducing-microsoft-discovery/) - Graph-based scientific co-reasoning. Specialized discovery agents for conducting research.
 - [Microsoft Discovery Community Repository](https://github.com/microsoft/discovery) - Community repository for Microsoft Discovery resources and collaboration.
-- [Microsoft Global Black Belt GitHub](https://github.com/microsoftgbb) - GitHub Organization for Azure AI patterns, accelerators, and field engineering samples.
+- [Microsoft Global Black Belt GitHub](https://github.com/microsoftgbb) - GitHub organization for Azure AI patterns, accelerators, and field engineering samples.
+- [Microsoft IQ Solution Accelerator](https://github.com/microsoft/microsoft-iq-solution-accelerator) - Deployable supply-chain disruption solution combining Work IQ, Foundry IQ, and Fabric IQ.
 - [Project-Nighthawk](https://github.com/microsoftgbb/project-nighthawk) - AI-powered deep technical research pipeline for AKS and Azure Red Hat OpenShift.
-- [ZavaShop on AKS + ACA — built by GitHub Copilo](https://github.com/microsoft/AKS-Lab-GitHubCopilot) - ZavaShop multi-agent retail lab using MAF, Copilot SDK, AKS, and ACA.
+- [ZavaShop on AKS + ACA — built by GitHub Copilot](https://github.com/microsoft/AKS-Lab-GitHubCopilot) - ZavaShop multi-agent retail lab using MAF, Copilot SDK, AKS, and ACA.
 
 ## Microsoft 365 Agent Development
 
@@ -279,6 +303,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Agent Builder & Plan Designer in Power Apps](https://www.microsoft.com/en-us/power-platform/blog/power-apps/build-user-focused-intelligent-solutions-in-power-apps-start-with-a-plan/) - Design and configure intelligent solutions in Power Apps.
 - [Agent Evaluation in Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-smarter-test-smarter-agent-evaluation-in-microsoft-copilot-studio/) - Structured, automated testing solution directly in Copilot Studio.
 - [Agents in Power Platform](https://www.microsoft.com/en-us/power-platform/blog/2024/11/19/redefine-development-ai-first-innovation-with-agents-and-microsoft-copilot-in-power-platform/) - AI first no-code development with Copilot agents in Power Platform.
+- [Azure Copilot Troubleshooting Agent](https://learn.microsoft.com/en-us/azure/copilot/overview) - Conversational assistance for diagnosing and resolving Azure issues.
 - [Combine Copilot Agents with Office Add-ins](https://devblogs.microsoft.com/microsoft365dev/office-addins-at-build-2025/) - Enhance Copilot with Office add-in actions for natural language interaction with Office documents.
 - [Community-Contributed Samples for Microsoft 365 Copilot](https://github.com/pnp/copilot-pro-dev-samples) - Samples for extending Microsoft 365 Copilot features.
 - [Copilot Prompts](https://github.com/pnp/copilot-prompts) - Prompt examples for Microsoft Copilot.
@@ -287,34 +312,33 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Copilot Tuning](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-microsoft-365-copilot-tuning/4414762) - Low-code model tuning and grounded agent creation.
 - [Deploying Agentic Services to Microsoft 365 Copilot](https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/deploying-existing-agentic-services-to-microsoft-365-copilot-via-gateway-and-obo/4504265) - Gateway and OBO pattern for existing agentic services.
 - [Introducing Copilot Actions, new agents, Copilot Control System](https://www.microsoft.com/en-us/microsoft-365/blog/2024/11/19/introducing-copilot-actions-new-agents-and-tools-to-empower-it-teams/) - New agent capabilities and management tools for IT teams.
+- [MCP Apps in Copilot Chat](https://devblogs.microsoft.com/microsoft365dev/mcp-apps-now-available-in-copilot-chat/) - Renders interactive MCP Apps and OpenAI Apps SDK widgets in Microsoft 365 Copilot.
 - [Microsoft 365 Agents SDK](https://devblogs.microsoft.com/microsoft365dev/introducing-the-microsoft-365-agents-sdk/) - The evolution of Bot Framework for building AI agents, with components for [.NET](https://github.com/microsoft/Agents-for-net), [Node.js/TypeScript](https://github.com/microsoft/Agents-for-js), and [Python](https://github.com/microsoft/Agents-for-python).
 - [Microsoft 365 Copilot APIs Client Libraries](https://github.com/microsoft/Agents-M365Copilot) - Client libraries for Microsoft 365 Copilot APIs.
 - [Microsoft 365 Copilot App Builder and Workflows](https://www.microsoft.com/en-us/microsoft-365/blog/2025/10/28/microsoft-365-copilot-now-enables-you-to-build-apps-and-workflows/) - Build working apps & workflows using natural language.
 - [Microsoft Copilot Studio](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - Customization and orchestration environment (formerly Power Virtual Agents).
 - [Power Apps MCP closed-loop learning](https://www.microsoft.com/en-us/power-platform/blog/power-apps/power-apps-mcp-server-introduces-closed-loop-learning-for-enterprise-agents/) - Agent corrections become organization-scoped memory and optimized instructions.
 - [Power CAT](https://microsoft.github.io/powercat/) - Microsoft Power CAT tools for Power Platform and Copilot Studio adoption.
-- [PowerPlatform-DataverseClient-Python](https://github.com/microsoft/PowerPlatform-DataverseClient-Python) - Python client for Microsoft Dataverse — CRUD, SQL queries, and file uploads.
 - [Power Platform Prompts](https://github.com/pnp/powerplatform-prompts) - Prompt examples for GPT-powered Power Platform workflows.
+- [PowerPlatform-DataverseClient-Python](https://github.com/microsoft/PowerPlatform-DataverseClient-Python) - Python client for Microsoft Dataverse — CRUD, SQL queries, and file uploads.
 - [SharePoint Agent](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/ignite-2024-agents-in-sharepoint-now-in-general-availability/4298746) - Turn SharePoint sites and documents into interactive agents.
 - [SharePoint Copilot Apps](https://devblogs.microsoft.com/microsoft365dev/going-beyond-text-in-microsoft-365-copilot-introducing-sharepoint-copilot-apps/) - Builds interactive SPFx components directly into the Copilot canvas.
+- [SharePoint Copilot Components](https://github.com/pnp/spfx-copilot-components) - Microsoft and community SPFx samples for building interactive SharePoint Copilot Apps in the Microsoft 365 Copilot canvas.
 - [Teams SDK](https://learn.microsoft.com/microsoftteams/platform/teams-sdk/) - Both `Teams SDK` and `Microsoft 365 Agents SDK` originate from the legacy, multi-channel [Bot Framework](https://learn.microsoft.com/microsoftteams/platform/teams-sdk/migrations/botbuilder/overview). Teams SDK succeeds the deprecated Teams AI Library v1 and focuses on Teams extensibility—Adaptive Cards, tabs, dialogs, message extensions, meetings, and SSO—whereas Microsoft 365 Agents SDK is the multi-channel evolution of Bot Framework.
 
 ## Learning Resources & Workshops
 
 - [AI Agents for Beginners - A Course](https://github.com/microsoft/ai-agents-for-beginners) - Ten-lesson introduction to building AI agents for Beginners.
-- [AI Developer](https://github.com/microsoft/ai-developer) - Challenges for Learning Azure AI Foundry and Semantic Kernel Fundamentals.
 - [AI Fluency](https://github.com/microsoft/AIFluency) - Learning resources and challenges for AI fluency.
 - [AI Playbook](https://learn.microsoft.com/en-us/ai/playbook/) - Enterprise AI solutions, capabilities, and code for real-world problems.
 - [Automated Compliance Agents Hackathon](https://github.com/microsoft/azure-trust-agents) - Hands-on hackathon challenges for multi-agent financial compliance workflows.
 - [Azure AI Foundry & Agents Workshop](https://github.com/microsoft/agentic-ai-lab) - Workshop materials for building agents with Azure AI Foundry.
-- [Build AI Solutions with Azure AI Foundry](https://github.com/microsoft/aitour-concept-to-creation-ai-studio) - Sample code and materials for building generative-AI solutions with Azure AI Foundry / Azure AI Studio, including prompt-engineering examples and workflows.
 - [Copilot Developer Camp](https://github.com/microsoft/copilot-camp) - Hands-on labs for extending Microsoft 365 Copilot and building custom agents.
 - [Copilot Studio Labs](https://microsoft.github.io/mcs-labs/) - Hands-on labs for building AI agents with Microsoft Copilot Studio.
 - [Copilot System Overview (video)](https://www.youtube.com/watch?v=E5g20qmeKpg) - Copilot Architecture explanation video.
 - [EdgeAI for Beginners](https://github.com/microsoft/edgeai-for-beginners) - Small Language Models (SLMs) optimized samples for On-device inference.
 - [Forgebook](https://microsoft-foundry.github.io/forgebook/) - Community cookbook of practical Microsoft Foundry notebooks.
 - [LinkedIn Learning](https://github.com/LinkedInLearning) - Official exercise-file repositories for LinkedIn Learning courses.
-- [Microsoft AI Tour](https://github.com/microsoft/aitour-repo-principal-list) - A session and workshop how to best leverage AI.
 - [Model Context Protocol Curriculum for Beginners](https://github.com/microsoft/mcp-for-beginners) - Introductory MCP course.
 - [Model Mondays](https://github.com/microsoft/model-mondays) - Weekly livestream and office hours on generative AI models and model selection.
 - [Partner Resources: AI & ML Academy](https://microsoft.github.io/PartnerResources/skilling/ai-ml-academy) - Comprehensive learning resources for partners and developers.
@@ -341,7 +365,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [LIDA](https://github.com/microsoft/lida) - LLM-powered data visualization and infographic generation from structured data.
 - [Magentic-One](https://microsoft.github.io/autogen/stable/user-guide/agentchat-user-guide/magentic-one.html) - A Generalist Multi-Agent System for Solving Complex Tasks.
 - [Magentic-UI](https://www.microsoft.com/en-us/research/blog/magentic-ui-an-experimental-human-centered-web-agent/) - Experimental human-centered web agent that can browse the web, run code, and process files.
-- [MAI-Thinking-1, MAI-Code-1-Flash](https://microsoft.ai/) - Microsoft AI model family notes for reasoning, coding, and research models.
+- [MAI-Thinking-1, MAI-Code-1-Flash](https://microsoft.ai/) - Microsoft AI model family notes for reasoning, coding, and research models. [MAI-Thinking-1 technical report](https://microsoft.ai/pdf/mai-thinking-1.pdf).
 - [MAI-Transcribe-1](https://microsoft.ai/news/state-of-the-art-speech-recognition-with-mai-transcribe-1/) - Microsoft speech-to-text model with strong multilingual WER, noisy-audio robustness, and Microsoft Foundry availability.
 - [MarS - A Financial Market Simulation Engine Powered by Generative Foundation Model](https://github.com/microsoft/MarS) - Financial market simulation using generative AI.
 - [MatterGen](https://www.microsoft.com/en-us/research/blog/mattergen-a-new-paradigm-of-materials-design-with-generative-ai/) - Generative model for inorganic materials design.
@@ -351,7 +375,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Mnesis](https://github.com/microsoft/Mnemis) - A memory framework for LLMs combining similarity search with Global Selection, using a base graph for fast retrieval and a hierarchical graph for top-down semantic traversal.
 - [NL2KQL](https://arxiv.org/abs/2404.02933) - From Natural Language to Kusto Query.
 - [Optimizing Model Selection for Compound AI Systems](https://arxiv.org/abs/2502.14815) - A framework that automatically optimizes model selection for compound AI systems.
-- [PIKE-RAG](https://github.com/microsoft/PIKE-RAG) - Specialized Knowledge & Rationale Augmentation Generation.
+- [PRISM2](https://news.microsoft.com/signal/articles/teaching-ai-to-speak-the-language-of-pathology/) - Microsoft research foundation model for pathology-language understanding.
 - [PromptWizard](https://www.microsoft.com/en-us/research/blog/promptwizard-the-future-of-prompt-optimization-through-feedback-driven-self-evolving-prompts/) - The prompt optimization through feedback-driven self-evolving prompts.
 - [R&D-Agent-Quant](https://arxiv.org/abs/2505.15155) - R&D-Agent for Quantitative Finance, in short RD-Agent(Q), the first data-centric multi-agent framework designed to automate the full-stack research and development of quantitative strategies via coordinated factor-model co-optimization.
 - [SkillOpt](https://github.com/microsoft/SkillOpt) - Trains reusable natural-language skills for frozen LLM agents.
@@ -367,22 +391,17 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [AI Dev Gallery](https://github.com/microsoft/ai-dev-gallery) - Windows application featuring interactive samples powered by local AI models.
 - [An Open-Source Template Gallery](https://azure.github.io/awesome-azd/?tags=aicollection) - Collection of Azure templates, including AI-focused starter projects.
 - [ARGUS](https://github.com/Azure-Samples/ARGUS) - Hybrid approach with Azure Document Intelligence combined and GPT4-Vision to get better results without any pre-training.
-- [Azure AI CLI](https://github.com/Azure/azure-ai-cli) - Interactive command-line tool for AI.
 - [Azure Chat Solution Accelerator](https://github.com/microsoft/azurechat) - Azure OpenAI chat accelerator with managed identities and enterprise controls.
 - [Azure Cosmos DB + OpenAI ChatGPT](https://github.com/AzureCosmosDB/cosmosdb-nosql-copilot) - Integration sample with Cosmos DB and chat interface.
 - [Azure OpenAI Embeddings QnA](https://github.com/Azure-Samples/azure-open-ai-embeddings-qna) - Embeddings-powered Q&A sample.
 - [Azure Video Indexer Demo](https://aka.ms/viopenaidemo) - Sample showing Azure Video Indexer integrated with OpenAI.
-- [Call Center AI](https://github.com/microsoft/call-center-ai) - Initiate phone calls from an AI agent via API or direct dialing.
 - [C# ChatGPT + Enterprise Data](https://github.com/Azure-Samples/azure-search-openai-demo-csharp) - C# reference app using Azure AI Search and Azure OpenAI.
-- [ChatGPT + Enterprise Data RAG (Retrieval-Augmented Generation)](https://github.com/Azure-Samples/azure-search-openai-demo) - Enterprise RAG sample integrating Azure OpenAI and Azure AI Search.
-- [ChatGPT Plugin Quickstart using Python and FastAPI](https://github.com/Azure-Samples/openai-plugin-fastapi) - Sample plugin implementation using Python and FastAPI.
+- [Call Center AI](https://github.com/microsoft/call-center-ai) - Initiate phone calls from an AI agent via API or direct dialing.
 - [Chat with Your Data Accelerator](https://github.com/Azure-Samples/chat-with-your-data-solution-accelerator) - Accelerator for grounding chat on custom data sources.
+- [ChatGPT + Enterprise Data RAG (Retrieval-Augmented Generation)](https://github.com/Azure-Samples/azure-search-openai-demo) - Enterprise RAG sample integrating Azure OpenAI and Azure AI Search.
 - [eShopSupport](https://github.com/dotnet/eshopsupport) - A reference .NET application using AI for a customer support ticketing system.
 - [GPT-Azure-Search-Engine](https://github.com/pablomarin/GPT-Azure-Search-Engine) - Integration of Azure Bot Service with LangChain.
 - [Miyagi](https://github.com/Azure-Samples/miyagi) - Integration demo spanning multiple LangChain libraries.
-- [Prompt Buddy](https://github.com/stuartridout/promptbuddy) - Share and upvote favorite AI prompts.
-- [Simple ChatGPT UI Application](https://github.com/Azure/openai-at-scale) - Scalable web UI pattern for Azure OpenAI chat.
-- [Smart Components](https://github.com/dotnet-smartcomponents/smartcomponents) - Experimental, end-to-end AI features for .NET apps.
 - [VoiceRAG](https://github.com/Azure-Samples/aisearch-openai-rag-audio) - Voice-enabled RAG using Azure AI Search and GPT-4o Realtime.
 
 ## Solution Accelerators
@@ -391,19 +410,15 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Agentic Applications for Unified Data Foundation](https://github.com/microsoft/agentic-applications-for-unified-data-foundation-solution-accelerator) - Agentic AI accelerator combining Microsoft Fabric, Azure AI Foundry agents, and Semantic Kernel.
 - [AI Hub Gateway Landing Zone](https://github.com/Azure-Samples/ai-hub-gateway-solution-accelerator) - Enterprise-ready solution accelerator for implementing a centralized AI API gateway.
 - [AI-in-a-Box](https://github.com/Azure/AI-in-a-Box) - Reference implementations for common Azure AI and machine learning scenarios.
-- [AI Solution Accelerators](https://github.com/Azure/ai-solution-accelerators-list) - List of Azure AI Solution Accelerators for demonstration and simplified deployment.
 - [Azure Accelerator Repos](https://github.com/orgs/Azure/repositories?q=accelerator+sort%3Astars) - Collection of official Azure accelerators.
-- [Azure-Cognitive-Search-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator) - Proof of Concept (POC) for a Generative AI Multi-Agent Architecture using Azure Services.
 - [Azure Landing Zones Accelerator](https://aka.ms/LZAccelerators) - Collection of Azure Landing Zones Accelerator.
 - [Azure Multimodal AI + LLM Processing Accelerator](https://github.com/Azure/multimodal-ai-llm-processing-accelerator) - Build multimodal data processing pipelines with Azure AI Services + LLMs.
-- [Azure-samples: Accelerator Collection](https://github.com/orgs/Azure-samples/repositories?q=quick+sort%3Astars) - Accelerator Collection sorted by stars count.
+- [Azure-Cognitive-Search-Azure-OpenAI-Accelerator](https://github.com/MSUSAzureAccelerators/Azure-Cognitive-Search-Azure-OpenAI-Accelerator) - Proof of Concept (POC) for a Generative AI Multi-Agent Architecture using Azure Services.
 - [Azure-Samples Accelerators](https://github.com/orgs/Azure-samples/repositories?q=accelerator+sort%3Astars) - Community driven sample accelerators.
-- [Build Your Own Copilot Solution Accelerator](https://github.com/microsoft/Build-your-own-copilot-Solution-Accelerator) - Solution Accelerator to show how to build your own copilot.
+- [Azure-samples: Accelerator Collection](https://github.com/orgs/Azure-samples/repositories?q=quick+sort%3Astars) - Accelerator Collection sorted by stars count.
 - [Chat with Your Data - Solution Accelerator](https://github.com/microsoft/chat-with-your-data-solution-accelerator) - Azure-based RAG accelerator using Azure AI Search and Azure OpenAI.
-- [Conversational Azure OpenAI Accelerator](https://github.com/MSUSAzureAccelerators/Conversational-Azure-OpenAI-Accelerator) - Conversational AI solution accelerator using Azure OpenAI.
 - [Conversation Knowledge Mining Solution Accelerator](https://github.com/microsoft/Conversation-Knowledge-Mining-Solution-Accelerator) - Generative AI solution for extracting insights from conversational data using Azure AI and Azure OpenAI.
-- [Document Generation Solution Accelerator](https://github.com/microsoft/document-generation-solution-accelerator) - AI assistant for document generation.
-- [Generic Accelerator for Build Your Own Copilot](https://github.com/microsoft/Generic-Build-your-own-copilot-Solution-Accelerator) - Build your own copilot solution accelerator.
+- [Conversational Azure OpenAI Accelerator](https://github.com/MSUSAzureAccelerators/Conversational-Azure-OpenAI-Accelerator) - Conversational AI solution accelerator using Azure OpenAI.
 - [Healthcare Agent Orchestrator](https://github.com/Azure-Samples/healthcare-agent-orchestrator) - A multi-agent accelerator that coordinates modular specialized agents to assist multi-disciplinary healthcare workflows.
 - [Hypervelocity Engineering](https://techcommunity.microsoft.com/blog/azurearchitectureblog/hypervelocity-engineering-accelerating-enterprise-ai-with-azure-ai-landing-zones/4536192) - Applies HVE practices to continuously evolve Azure AI landing zones.
 - [MSUS Azure Accelerators](https://github.com/MSUSAzureAccelerators) - Partner accelerator implementations.
@@ -414,9 +429,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 
 - [Agent-Framework-Samples](https://github.com/microsoft/Agent-Framework-Samples) - Sample projects demonstrating Microsoft Agent Framework usage.
 - [AI Hub Gateway](https://aka.ms/ai-hub-gateway) - Reference architecture and accelerator for a central enterprise AI gateway.
-- [AI-in-a-Box - Generative AI Bot Quickstart](https://github.com/Azure-Samples/gen-ai-bot-in-a-box) - A template deploys a Generative AI Virtual Assistant using Azure OpenAI and Bot Framework.
 - [AI-in-One-Dashboard](https://github.com/microsoft/AI-in-One-Dashboard) - Power BI template for comprehensive AI usage analytics.
-- [AI Samples for .NET](https://github.com/dotnet/ai-samples) - Official .NET AI samples (evaluation, integration).
 - [APIM-Unified-AI-Gateway-Sample](https://github.com/Azure-Samples/APIM-Unified-AI-Gateway-Sample) - Single APIM endpoint for Phi-4, GPT-4.1, and Gemini with centralized governance.
 - [Azure AI Foundry Baseline](https://github.com/Azure-Samples/azure-ai-foundry-baseline) - Baseline setup for Azure AI Foundry projects.
 - [Azure Container Apps Dynamic Sessions Samples](https://github.com/Azure-Samples/container-apps-dynamic-sessions-samples) - On-demand, short-lived container sessions using Azure Container Apps Dynamic Sessions.
@@ -426,48 +439,40 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Azure OpenAI Cookbook](https://github.com/Azure-Samples/openai) - The repository for all Azure OpenAI Samples complementing the OpenAI cookbook.
 - [Azure OpenAI Design Patterns](https://github.com/microsoft/azure-openai-design-patterns) - A set of design patterns using the Azure OpenAI service.
 - [Azure OpenAI Network Latency Test Script](https://github.com/wloryo/networkchatgpt/blob/dc76f2264ff8c2a83392e6ae9ee2aaa55ca86f0e/openai_network_latencytest_nocsv_pub_v1.1.py) - Python script for measuring Azure OpenAI network latency.
-- [Azure OpenAI RAFT](https://github.com/Azure-Samples/azure-openai-raft ) - RAFT Fine-Tuning for RAG Using Azure OpenAI.
 - [Azure OpenAI RAG Workshop](https://github.com/Azure-Samples/azure-openai-rag-workshop) - RAG using LangChain.js and OpenAI. Hosted on Azure Static Web Apps and Azure Container Apps, with Azure AI Search as the vector database.
 - [Azure OpenAI Using PTUs/TPMs With API Management](https://github.com/Azure/aoai-apim) - Scaling Azure OpenAI using APIM.
-- [Azure OpenAI with AKS by Terraform (simple version)](https://github.com/Azure-Samples/azure-openai-terraform-deployment-sample) - Terraform sample for deploying Azure OpenAI with AKS.
 - [Azure OpenAI Workshop](https://github.com/microsoft/OpenAIWorkshop) - Workshop materials to build intelligent solutions on Open AI.
-- [Azure-Samples](https://github.com/Azure-Samples) - GitHub organization for official Azure sample projects.
 - [Azure SQL DB + AOAI](https://github.com/Azure-Samples/SQL-AI-samples) - AI applications built on data from an Azure SQL Database.
+- [Azure-Samples](https://github.com/Azure-Samples) - GitHub organization for official Azure sample projects.
 - [Build Your Own Copilot](https://github.com/Azure/BuildYourOwnCopilot) - RAG demo using Cosmos DB, AKS, Semantic Kernel.
-- [Create an Azure OpenAI, LangChain, ChromaDB, and Chainlit ChatGPT-like application in Azure Container Apps using Terraform](https://github.com/Azure-Samples/container-apps-openai/) - ChatGPT-like application in Azure Container Apps using Terraform.
-- [Design and Evaluation of RAG Solutions](https://github.com/Azure-Samples/Design-and-evaluation-of-RAG-solutions) - Resources for designing and evaluating RAG solutions.
 - [Document Intelligence-in-a-Box](https://github.com/Azure-Samples/doc-intelligence-in-a-box) - Uses Azure AI Document Intelligence to extract data from PDF forms and store results in Azure Cosmos DB — part of the "AI-in-a-Box" accelerator.
 - [Document Processing with Azure AI Samples](https://github.com/Azure-Samples/azure-ai-document-processing-samples) - Document Intelligence plus generative enrichment examples.
 - [Domain-Specific Languages Copilot](https://github.com/microsoft/dsl-copilot) - Domain-Specific Languages specialized Copilot demo & Fine Tuning Pipeline.
-- [Enterprise Logging](https://github.com/Azure-Samples/openai-python-enterprise-logging) - Comprehensive logging of Azure OpenAI model execution.
 - [Enterprise RAG Avatar](https://github.com/Azure/gpt-rag-avatar) - GPT-RAG Avatar integrates Generative AI responses, real-time streaming into a dynamic avatar interface.
 - [Evaluating a RAG Chat App](https://github.com/Azure-Samples/ai-rag-chat-evaluator) - Tools for evaluation of RAG Chat Apps using Azure AI Evaluate SDK.
-- [Fabric Notebooks for Analyzing Chat History Stored in Cosmos DB](https://github.com/microsoft/fabric-cosmosdb-chat-analytics) - Fabric notebooks for analyzing chat history.
-- [Generate Synthetic QnAs from Real-World Data](https://github.com/Azure/synthetic-qa-generation) - Demonstrating how to create/augment a QnA dataset from complex unstructured data.
-- [GPT-RAG](https://github.com/Azure/GPT-RAG) - Enterprise RAG solution accelerator.
 - [GPT RAG Ingestion](https://github.com/Azure/gpt-rag-ingestion) - GPT-based RAG ingestion utilities.
+- [GPT-RAG](https://github.com/Azure/GPT-RAG) - Enterprise RAG solution accelerator.
 - [Legal Research Copilot Example](https://github.com/Azure-Samples/graphrag-legalcases-postgres) - GraphRAG on Azure Database for PostgreSQL. Use U.S. Case Law dataset of 0.5 million legal cases.
 - [Microsoft Copilot Studio Samples](https://github.com/microsoft/CopilotStudioSamples) - Samples and artifacts for Microsoft Copilot Studio.
-- [Microsoft.Extensions.AI](https://devblogs.microsoft.com/dotnet/introducing-microsoft-extensions-ai-preview/) - Unified C# abstractions for models, embeddings, and middleware.
 - [Microsoft Frontier Company](https://blogs.microsoft.com/blog/2026/07/02/microsoft-frontier-company-ai-engineering-that-amplifies-and-protects-your-intelligence/) - Operating model for trusted, outcome-driven enterprise AI transformation.
+- [Microsoft.Extensions.AI](https://devblogs.microsoft.com/dotnet/introducing-microsoft-extensions-ai-preview/) - Unified C# abstractions for models, embeddings, and middleware.
 - [OpenAI Chat Application with Microsoft Entra Authentication](https://github.com/Azure-Samples/openai-chat-app-entra-auth-builtin) - Authenticated chat starter with Microsoft Entra ID.
 - [RAG for Azure Data](https://github.com/microsoft/AzureDataRetrievalAugmentedGenerationSamples) - Retrieval Augmented Generation (RAG) for Azure Data.
-- [Setting up Azure OpenAI with Azure API Management](https://github.com/Azure/enterprise-azureai) - Azure AI to your application developers in a secure & manageable way with Azure API Management.
-- [Smart Load Balancing for Azure OpenAI](https://github.com/Azure-Samples/openai-aca-lb) - Intelligent routing across multiple Azure OpenAI deployments.
 - [Vector Similarity Search with Azure SQL & Azure OpenAI](https://github.com/Azure-Samples/azure-sql-db-openai) - Samples on how to use Azure SQL database with Azure OpenAI.
 
 ## Architecture Patterns & Use Cases
 
+- [AI Agent ROI Framework](https://techcommunity.microsoft.com/blog/azurearchitectureblog/ai-agent-roi-framework/4555445) - Framework for selecting agent use cases, measuring costs and outcomes, and optimizing returns.
 - [AI Agent-Driven Auto Insurance Claims RAG Pipeline](https://techcommunity.microsoft.com/t5/azure-architecture-blog/exploring-ai-agent-driven-auto-insurance-claims-rag-pipeline/ba-p/4233779) - Agent-driven claims processing reference.
 - [AI Decision Tree](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/strategy) - Selecting the most suitable tools and platforms for your generative and nongenerative AI use cases.
 - [AI Feed](https://techcommunity.microsoft.com/t5/artificial-intelligence-and/ct-p/AI) - Azure AI news, events, and discussions.
-- [AI Gateway Capabilities in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities) - Secure, scale, observe, and govern models, agents, MCP servers, and A2A APIs with authentication, token controls, semantic caching, load balancing, and policy enforcement.
+- [AI Gateway Capabilities in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities) - Secure, scale, observe, and govern models, agents, MCP servers, and A2A APIs with authentication, token controls, semantic caching, load balancing, and policy enforcement. Foundry's AI Gateway is Azure API Management-based, not a separate gateway.
 - [AI Gateway Enhancements: LLM policies, Real-Time API support, Content Safety, and more](https://techcommunity.microsoft.com/blog/integrationsonazureblog/ai-gateway-enhancements-llm-policies-real-time-api-support-content-safety-and-mo/4409828) - Semantic Caching. Azure AI Content Safety. LLM policies (llm-token-limit, llm-emit-metric, llm-content-safety).
-- [AI-Landing-Zones](https://github.com/Azure/AI-Landing-Zones) - Reference architecture for secure, scalable Azure AI apps and agents.
 - [AI Landing Zones Guardrails for Azure Machine Learning](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-MachineLearning.html) - Recommended Azure Policy initiative for Azure Machine Learning guardrails.
 - [AI Landing Zones Guardrails for Bot Service](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-BotService.html) - Recommended Azure Policy initiative for Bot Service guardrails.
 - [AI Landing Zones Guardrails for Cognitive Services](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-CognitiveServices.html) - Recommended Azure Policy initiative for Cognitive Services guardrails.
 - [AI Landing Zones Guardrails for OpenAI](https://www.azadvertizer.net/azpolicyinitiativesadvertizer/Enforce-Guardrails-OpenAI.html) - Recommended Azure Policy initiative for Azure OpenAI guardrails.
+- [AI-Landing-Zones](https://github.com/Azure/AI-Landing-Zones) - Reference architecture for secure, scalable Azure AI apps and agents.
 - [An Introduction to LLMOps](https://techcommunity.microsoft.com/t5/ai-machine-learning-blog/an-introduction-to-llmops-operationalizing-and-managing-large/ba-p/3910996) - Operationalizing and Managing Large Language Models using Azure ML.
 - [Authentication and Authorization in Generative AI applications with Entra ID and Azure AI Search](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/authentication-and-authorization-in-generative-ai-applications/ba-p/4022277) - Authentication in AI applications with Entra ID and Azure AI Search.
 - [Azure AI Foundry Blog](https://techcommunity.microsoft.com/t5/ai-ai-platform-blog/bg-p/AIPlatformBlog) - News and updates about Azure AI Foundry and related platform capabilities.
@@ -489,11 +494,10 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Extend Your Coding Agent with .NET Skills](https://devblogs.microsoft.com/dotnet/extend-your-coding-agent-with-dotnet-skills/) - How to extend coding agents using .NET skills.
 - [Grounding LLMs](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/grounding-llms/ba-p/3843857) - Use-cases for Grounding & Retrieval-Augmented Generation (RAG).
 - [How Real-World Businesses Are Transforming with AI](https://blogs.microsoft.com/blog/2024/11/12/how-real-world-businesses-are-transforming-with-ai/) - Collected over 200 examples of how organizations are leveraging Microsoft AI capabilities.
-- [How to Develop AI Apps and Agents in Azure – A Visual Guide](https://devblogs.microsoft.com/all-things-azure/how-to-develop-ai-apps-and-agents-in-azure-a-visual-guide/) - A Visual map to help you decide which Azure AI service is best for your use case.
-- [Industry Cloud Reference Architectures](https://github.com/microsoft/industry) - Holistic architecture design and reference implementation for industry cloud.
+- [How to Develop AI Apps and Agents in Azure – A Visual Guide](https://devblogs.microsoft.com/all-things-azure/how-to-develop-ai-apps-and-agents-in-azure-a-visual-guide/) - A visual map to help you decide which Azure AI service is best for your use case.
 - [Integrate Private Access to Your Azure Open AI Chatbot](https://techcommunity.microsoft.com/t5/fasttrack-for-azure/integrate-private-access-to-your-azure-open-ai-chatbot/ba-p/3994613) - Private access solutions to your Azure Open AI Chatbot.
-- [Microsoft-AI-Decision-Framework](https://github.com/microsoft/Microsoft-AI-Decision-Framework) - Decision framework for selecting Microsoft AI technologies across Copilot and Azure AI.
 - [Microsoft AI / Responsible AI](https://aka.ms/RAIResources) - Responsible AI resources from Microsoft.
+- [Microsoft-AI-Decision-Framework](https://github.com/microsoft/Microsoft-AI-Decision-Framework) - Decision framework for selecting Microsoft AI technologies across Copilot and Azure AI.
 - [NL to SQL Architecture Alternative](https://techcommunity.microsoft.com/t5/azure-architecture-blog/nl-to-sql-architecture-alternatives/ba-p/4136387) - LLM to dynamically generate SQL queries, execute those SQL queries.
 - [Optimize Azure OpenAI Applications with Semantic Caching](https://techcommunity.microsoft.com/t5/azure-architecture-blog/optimize-azure-openai-applications-with-semantic-caching/ba-p/4106867) - Semantic cache pattern for latency and cost reduction.
 - [Responsible AI Transparency Report](https://www.microsoft.com/en-us/corporate-responsibility/responsible-ai-transparency-report) - Overview of Microsoft's responsible AI tools, policies, and practices.
@@ -504,6 +508,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 - [Security Best Practices for GenAI Applications (OpenAI) in Azure](https://techcommunity.microsoft.com/t5/azure-architecture-blog/security-best-practices-for-genai-applications-openai-in-azure/ba-p/4027885) - The best practices of security for GenAI applications in Azure.
 - [Smart Document Processing with ADI, AI Search and OpenAI](https://techcommunity.microsoft.com/blog/azurearchitectureblog/from-large-semi-structured-docs-to-actionable-data-reusable-pipelines-with-adi-a/4474054) - Reusable extraction pipeline for large semi-structured documents.
 - [Sovereign controls in data processing for Microsoft 365 Copilot](https://www.microsoft.com/en-us/microsoft-365/blog/2025/11/04/microsoft-offers-in-country-data-processing-to-15-countries-to-strengthen-sovereign-controls-for-microsoft-365-copilot/) - Microsoft 365 Data Residency and Processing commitments map.
+- [Three-Layer LLM Routing Architecture for Agents on AKS](https://www.infoq.com/news/2026/07/microsoft-agents-aks-routing/) - Combines GPU-aware Kubernetes Gateway API routing, `agentgateway` policy enforcement, and semantic model routing through an OpenAI-compatible endpoint.
 - [Using Keyless Authentication with Azure OpenAI](https://techcommunity.microsoft.com/t5/microsoft-developer-community/using-keyless-authentication-with-azure-openai/ba-p/4111521) - Entra ID token-based access to Azure OpenAI.
 - [Vector Search Technology Choices (Azure Architecture Guide)](https://learn.microsoft.com/en-us/azure/architecture/guide/technology-choices/vector-search) - Decision guide for vector search technology choices.
 

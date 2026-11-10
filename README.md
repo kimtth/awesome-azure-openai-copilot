@@ -59,6 +59,7 @@ Azure OpenAI is Microsoft's cloud service for deploying OpenAI models, and Micro
 
 - [Agent Builder & Plan Designer in Power Apps](https://www.microsoft.com/en-us/power-platform/blog/power-apps/build-user-focused-intelligent-solutions-in-power-apps-start-with-a-plan/) - Design and configure intelligent solutions in Power Apps.
 - [Agent Evaluation in Microsoft Copilot Studio](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/build-smarter-test-smarter-agent-evaluation-in-microsoft-copilot-studio/) - Structured, automated testing solution directly in Copilot Studio.
+- [Agents Copilot en production](https://zakariakhchiche.github.io/livre/) - Free 100-page book (in French) on taking Copilot Studio and Foundry agents to production: evaluation, governance, ALM, cost. DOI 10.5281/zenodo.23281706.
 - [Agents in Power Platform](https://www.microsoft.com/en-us/power-platform/blog/2024/11/19/redefine-development-ai-first-innovation-with-agents-and-microsoft-copilot-in-power-platform/) - AI first no-code development with Copilot agents in Power Platform.
 - [Copilot Studio Monthly Updates](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/cs-content-type/monthly-updates/) - Copilot Studio news and features for the last month.
 - [Copilot Studio Update](https://www.microsoft.com/en-us/microsoft-copilot/blog/copilot-studio/whats-new-in-copilot-studio-march-2025/) - Added autonomous agents, deep reasoning, and MCP integration.
